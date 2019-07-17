@@ -9,7 +9,7 @@ import overLayPic from '../assets/images/overlay.png';
 import { Link } from 'gatsby';
 
 const sections = [
-  { id: 'one', bg: require('../assets/images/pic01.jpg') },
+  { id: 'one', bg: require('../assets/images/hb1.jpg') },
   { id: 'two', bg: require('../assets/images/pic02.jpg') },
   { id: 'three', bg: require('../assets/images/pic03.jpg') },
 ];
@@ -89,7 +89,7 @@ const IndexPage = () => (
         </span>
         <div className="content">
           <header className="major">
-            <h2>One more thing</h2>
+            <h2>Projects</h2>
           </header>
           <p>
             Aliquam ante ac id. Adipiscing interdum lorem praesent fusce
