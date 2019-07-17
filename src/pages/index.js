@@ -15,6 +15,7 @@ const sections = [
 ];
 const IndexPage = () => (
   <Layout>
+
     <Header />
 
     <section id="one" className="main special">
