@@ -288,7 +288,7 @@
 	.container {
 		margin: 0 auto;
 		max-width: calc(100% - #{_size(element-margin) * 2});
-		width: 60%;
+		width: 50%;
 
 		&.xsmall {
 			width: (_size(container-width) * 0.25);
@@ -504,6 +504,69 @@
 
 			p {
 				margin-top: 0;
+			}
+		}
+		
+		#section07 {
+			.arw-bkg {
+				margin-top: 20px;
+				// margin: 20px auto 0px auto;
+				// border-radius: 50%;
+				// width: 5em;
+				// height: 5em;
+				// background: rgba(0,0,0,0.2);	
+			}	
+		}
+
+		#section07 a span {
+			display: flex;
+			width: 30px;
+			height: 30px;
+			margin: -5px auto;
+			border-left: 2px solid #fff;
+			border-bottom: 2px solid #fff;
+			-webkit-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+			-webkit-animation: sdb07 2s infinite;
+			animation: sdb07 2s infinite;
+			opacity: 0;
+			box-sizing: border-box;
+		}
+		#section07 a span:nth-of-type(1) {
+			
+			-webkit-animation-delay: 0s;
+			animation-delay: 0s;
+		}
+		#section07 a span:nth-of-type(2) {
+			top: 47vh;
+			-webkit-animation-delay: .15s;
+			animation-delay: .15s;
+		}
+		#section07 a span:nth-of-type(3) {
+			top: 49vh;
+			-webkit-animation-delay: .3s;
+			animation-delay: .3s;
+		}
+		@-webkit-keyframes sdb07 {
+			0% {
+			opacity: 0;
+			}
+			50% {
+			opacity: 1;
+			}
+			100% {
+			opacity: 0;
+			}
+		}
+		@keyframes sdb07 {
+			0% {
+			opacity: 0;
+			}
+			50% {
+			opacity: 1;
+			}
+			100% {
+			opacity: 0;
 			}
 		}
 	}
@@ -867,7 +930,21 @@
 			content: '';
 			display: block;
 		}
+
+		.icons-img1 {
+			width: 100px;
+			height: 150px;
+		}
+		.icons-img2 {
+			width: 150px;
+			height: 150px;
+		}
 	}
+	.tools-img {
+		width: 80%;
+		height: 300px;
+	}
+
 
 /* Actions */
 
@@ -1204,6 +1281,12 @@
 				background-color: _palette(border2-bg);
 			}
 		}
+
+		.project-pics {
+			box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
+			margin: 15px auto;
+			width: 70%;
+		}
 	}
 
 /* Header */
@@ -1357,8 +1440,8 @@
 
 			.main {
 				.image.primary {
-					display: block;
-					margin: 0 0 (_size(element-margin) * 2) 0;
+					// display: block;
+					// margin: 0 0 (_size(element-margin) * 2) 0;
 				}
 
 				.container {
@@ -1401,6 +1484,10 @@
 				}
 			}
 
+	}
+
+	@include breakpoint('>=medium') {
+		
 	}
 
 /* Small */
