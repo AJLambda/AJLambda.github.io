@@ -1,5 +1,7 @@
 import React from 'react';
 import Scrollspy from 'react-scrollspy';
+import Bounce from 'react-reveal/Bounce';
+import Flip from 'react-reveal/Flip';
 
 import Layout from '../components/Layout';
 import Header from '../components/Header';
@@ -10,12 +12,15 @@ import nodeimg from '../assets/images/nodeimg.jpg';
 import htmlimg from '../assets/images/html5.jpg';
 import jsimg from '../assets/images/jsimg.png';
 import cssimg from '../assets/images/cssimg.png';
-import tools from '../assets/images/tools.png';
-import { Link } from 'gatsby';
+import riy from '../assets/images/riy8.png';
+import safespace from '../assets/images/safespace6.png';
+import topnine from '../assets/images/topnine.png';
+import lambdafit from '../assets/images/lambdafit.png';
+
 
 const sections = [
   { id: 'one', bg: require('../assets/images/hb1.jpg') },
-  { id: 'two', bg: require('../assets/images/pic02.jpg') },
+  { id: 'two', bg: require('../assets/images/code2.jpg') },
   { id: 'three', bg: require('../assets/images/pic03.jpg') },
 ];
 const IndexPage = () => (
@@ -59,25 +64,33 @@ const IndexPage = () => (
           <ul className="icons-grid">
             <li>
               <div className="icons-wrapper">
+                <Flip>
                 <img src={htmlimg} alt="html5" className="icons-img1"/>
+                </Flip>
               </div>
               <h3>Html5</h3>
             </li>
             <li>
               <div className="icons-wrapper">
+              <Flip>
                 <img src={cssimg} alt="css" className="icons-img1"/>
+                </Flip>
               </div>
               <h3>CSS</h3>
             </li>
             <li>
               <div className="icons-wrapper">
+              <Flip>
                 <img src={jsimg} alt="js" className="icons-img2"/>
+                </Flip>
               </div>
               <h3>Javascript</h3>
             </li>
             <li>
               <div className="icons-wrapper">
+              <Flip>
                 <img src={nodeimg} alt="nodejs" className="icons-img2"/>
+                </Flip>
               </div>
               <h3>NodeJS</h3>
             </li>
@@ -107,6 +120,11 @@ const IndexPage = () => (
             integer vulputate phasellus lorem ipsum dolor lorem magna consequat
             sed etiam adipiscing interdum.
           </p>
+          <img src={riy} alt="RIY" className="project-pics"/>
+          <img src={safespace} alt="safespace" className="project-pics"/>
+          <img src={topnine} alt="topnine" className="project-pics"/>
+          <img src={lambdafit} alt="lambdafit" className="project-pics"/>
+
         </div>
         <Scroll type="id" element="footer">
           <a href="#footer" className="goto-next ">
@@ -157,7 +175,6 @@ const IndexPage = () => (
     <Scrollspy
       items={sections.map(s => s.id)}
       currentClassName="active"
-      offset={50}
       componentTag={'div'}
     >
       {sections.map(s => {
