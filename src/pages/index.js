@@ -1,7 +1,7 @@
 import React from 'react';
 import Scrollspy from 'react-scrollspy';
-import Bounce from 'react-reveal/Bounce';
 import Flip from 'react-reveal/Flip';
+import Fade from 'react-reveal/Fade';
 
 import Layout from '../components/Layout';
 import Header from '../components/Header';
@@ -30,19 +30,28 @@ const IndexPage = () => (
     <section id="one" className="main special">
       <div className="container">
         <span className="image fit primary">
-          <img src={sections[0].bg} alt="" />
+          <img src={sections[0].bg} alt="background1" />
         </span>
         <div className="content">
           <header className="major">
             <h2>About Me</h2>
           </header>
+          <Fade bottom>
           <p>
             I am 28 year old web developer student at Lambda School. I love to create, design, and solve problems. 
           </p>
+          </Fade>
         </div>
         <Scroll type="id" element="two">
           <a href="#two" className="goto-next ">
-            Next
+            <div className="center-con">
+              <div className="round">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
           </a>
         </Scroll>
       </div>
@@ -51,15 +60,17 @@ const IndexPage = () => (
     <section id="two" className="main special">
       <div className="container">
         <span className="image fit primary">
-          <img src={sections[1].bg} alt="" />
+          <img src={sections[1].bg} alt="background2" />
         </span>
         <div className="content">
           <header className="major">
             <h2>Experience</h2>
           </header>
+          {/* <Fade bottom> */}
           <p>
             These are some of the languages/tools that I am currently working with.
           </p>
+          {/* </Fade> */}
           {/* <img src={tools} alt="tools" className="tools-img"/> */}
           <ul className="icons-grid">
             <li>
@@ -97,8 +108,15 @@ const IndexPage = () => (
           </ul>
         </div>
         <Scroll type="id" element="three">
-          <a href="#three" className="goto-next ">
-            Next
+          <a href="#three">
+            <div className="center-con">
+              <div className="round">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
           </a>
         </Scroll>
       </div>
@@ -111,24 +129,77 @@ const IndexPage = () => (
         </span>
         <div className="content">
           <header className="major">
-            <h2>Projects</h2>
+            <h2>Portfolio</h2>
           </header>
+          <Fade bottom>
           <p>
-            Aliquam ante ac id. Adipiscing interdum lorem praesent fusce
-            pellentesque arcu feugiat. Consequat sed ultricies rutrum. Sed
-            adipiscing eu amet interdum lorem blandit vis ac commodo aliquet
-            integer vulputate phasellus lorem ipsum dolor lorem magna consequat
-            sed etiam adipiscing interdum.
+            I have created many projects since I joined Lambda School. I enrolled in the Full Stack program to diversify my studies and gain a wide array of knowledge about how websites and applications are made. These are some of my most notable creations so far.
           </p>
-          <img src={riy} alt="RIY" className="project-pics"/>
-          <img src={safespace} alt="safespace" className="project-pics"/>
-          <img src={topnine} alt="topnine" className="project-pics"/>
-          <img src={lambdafit} alt="lambdafit" className="project-pics"/>
+          </Fade>
+          <h3 className="project-title">Review It Yourself</h3>
+          <div className="project-box">
+            <div className="project-content">
+              <a href="https://unsplash.com/photos/HkTMcmlMOUQ">
+                <div className="content-overlay"></div>
+                <img className="content-image1" src={riy} alt="Review It Yourself"/>
+                <div className="content-details fadeIn-bottom">
+                  <h3 className="content-title">- Review It Yourself -</h3>
+                  <p className="content-text">This was my capstone project with Lambda School. I worked as a Full Stack Web Developer on an amazing team. We spent five weeks building the app from the ground up and it is my most proud accomplishment so far.</p>
+                </div>
+              </a>
+            </div>   
+          </div>
+          <h3 className="project-title">Safe Space</h3>
+          <div className="project-box">
+            <div className="project-content">
+              <a href="https://unsplash.com/photos/HkTMcmlMOUQ">
+                <div className="content-overlay"></div>
+                <img className="content-image" src={safespace} alt="Safespace"/>
+                <div className="content-details fadeIn-bottom">
+                  <h3 className="content-title">- Safe Space -</h3>
+                  <p className="content-text">This was another project I created during my time at Lambda School. I worked as the Front End Developer in collaboration with a UI Developer and two Back End Developers.</p>
+                </div>
+              </a>
+            </div>   
+          </div>
+          <h3 className="project-title">My Top Nine</h3>
+          <div className="project-box">
+            <div className="project-content">
+              <a href="https://unsplash.com/photos/HkTMcmlMOUQ">
+                <div className="content-overlay"></div>
+                <img className="content-image" src={topnine} alt="My Top Nine" />
+                <div className="content-details fadeIn-bottom">
+                  <h3 className="content-title">- My Top Nine -</h3>
+                  <p className="content-text">This was my first group project at Lambda School. I was the UI Designer on the team. This is the first landing page that I created on my own.</p>
+                </div>
+              </a>
+            </div>   
+          </div>
+          <h3 className="project-title">LambdaFIT</h3>
+          <div className="project-box">
+            <div className="project-content">
+              <a href="https://unsplash.com/photos/HkTMcmlMOUQ">
+                <div className="content-overlay"></div>
+                <img className="content-image" src={lambdafit} alt="Lambda Fit" />
+                <div className="content-details fadeIn-bottom">
+                  <h3 className="content-title">- LambdaFIT -</h3>
+                  <p className="content-text">This was another group project I worked on at Lambda School. I was a Back End Developer on the team. I worked in collaboration with a fellow Back End Devloper and a Front End Developer.</p>
+                </div>
+              </a>
+            </div>   
+          </div>
 
         </div>
         <Scroll type="id" element="footer">
           <a href="#footer" className="goto-next ">
-            Next
+            <div className="center-con">
+              <div className="round">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
           </a>
         </Scroll>
       </div>
