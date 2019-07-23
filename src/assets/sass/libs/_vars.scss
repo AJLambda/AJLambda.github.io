@@ -28,6 +28,11 @@
 
 // Palette.
 	$palette: (
+		sandstone:          #f4cc70,
+		burnt-orange:       #de7a22,
+		sea:                #20948b,
+		lagoon:             #6ab187,
+
 		bg:					#fff,
 		fg:					#6f7577,
 		fg-bold:			#61686b,
@@ -50,11 +55,11 @@
 		),
 
 		accent1: (
-			bg:				#8cd1a8,
+			bg:				#de7a22,
 			fg-bold:		#ffffff,
-			fg:				mix(#8cd1a8, #ffffff, 25%),
-			fg-light:		mix(#8cd1a8, #ffffff, 40%),
-			fg-lighter:		mix(#8cd1a8, #ffffff, 90%),
+			fg:				mix(#de7a22, #ffffff, 25%),
+			fg-light:		mix(#de7a22, #ffffff, 40%),
+			fg-lighter:		mix(#de7a22, #ffffff, 90%),
 			border:			rgba(255,255,255,0.25),
 			border-bg:		rgba(255,255,255,0.075),
 			border2:		rgba(255,255,255,0.5),

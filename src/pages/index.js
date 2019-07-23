@@ -2,6 +2,8 @@ import React from 'react';
 import Scrollspy from 'react-scrollspy';
 import Flip from 'react-reveal/Flip';
 import Fade from 'react-reveal/Fade';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 import Layout from '../components/Layout';
 import Header from '../components/Header';
@@ -12,6 +14,8 @@ import nodeimg from '../assets/images/nodeimg.jpg';
 import htmlimg from '../assets/images/html5.jpg';
 import jsimg from '../assets/images/jsimg.png';
 import cssimg from '../assets/images/cssimg.png';
+// import me from '../assets/images/me.jpg'
+import austin from '../assets/images/austinjames3.png'
 import riy from '../assets/images/riy8.png';
 import safespace from '../assets/images/safespace6.png';
 import topnine from '../assets/images/topnine.png';
@@ -34,6 +38,7 @@ const IndexPage = () => (
         </span>
         <div className="content">
           <header className="major">
+            <img className="profile-img" src={austin} alt="Austin" />
             <h2>About Me</h2>
           </header>
           <Fade bottom>
@@ -66,11 +71,11 @@ const IndexPage = () => (
           <header className="major">
             <h2>Experience</h2>
           </header>
-          {/* <Fade bottom> */}
+          <Fade bottom>
           <p>
             These are some of the languages/tools that I am currently working with.
           </p>
-          {/* </Fade> */}
+          </Fade>
           {/* <img src={tools} alt="tools" className="tools-img"/> */}
           <ul className="icons-grid">
             <li>
@@ -139,53 +144,85 @@ const IndexPage = () => (
           <h3 className="project-title">Review It Yourself</h3>
           <div className="project-box">
             <div className="project-content">
-              <a href="https://unsplash.com/photos/HkTMcmlMOUQ">
+              <div className="project-container">
                 <div className="content-overlay"></div>
                 <img className="content-image1" src={riy} alt="Review It Yourself"/>
                 <div className="content-details fadeIn-bottom">
                   <h3 className="content-title">- Review It Yourself -</h3>
-                  <p className="content-text">This was my capstone project with Lambda School. I worked as a Full Stack Web Developer on an amazing team. We spent five weeks building the app from the ground up and it is my most proud accomplishment so far.</p>
+                  <p className="content-text">My capstone project with Lambda School. I worked as a Full Stack Web Developer on an amazing team. We spent five weeks building the app from the ground up.</p>
+                  <div className="content-links">
+                  <a href="https://github.com/labs13-how-to" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faGithub} className="github-icon" />
+                  </a>
+                  <a href="https://review-it-yourself.com/" target="_blank" rel="noopener noreferrer">
+                  <div className="fa fa-link fa-3x"/>
+                  </a>
+                  </div>
                 </div>
-              </a>
+              </div>
             </div>   
           </div>
           <h3 className="project-title">Safe Space</h3>
           <div className="project-box">
             <div className="project-content">
-              <a href="https://unsplash.com/photos/HkTMcmlMOUQ">
+              <div className="project-container">
                 <div className="content-overlay"></div>
                 <img className="content-image" src={safespace} alt="Safespace"/>
                 <div className="content-details fadeIn-bottom">
                   <h3 className="content-title">- Safe Space -</h3>
-                  <p className="content-text">This was another project I created during my time at Lambda School. I worked as the Front End Developer in collaboration with a UI Developer and two Back End Developers.</p>
+                  <p className="content-text">A project I created during my time at Lambda School. I worked as the Front End Developer in collaboration with a UI Developer and two Back End Developers.</p>
+                  <div className="content-links">
+                  <a href="https://github.com/AJLambda/safespace" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faGithub} className="github-icon" />
+                  </a>
+                  <a href="https://safespace-frontend.netlify.com/" target="_blank" rel="noopener noreferrer">
+                  <div className="fa fa-link fa-3x"/>
+                  </a>
+                  </div>
                 </div>
-              </a>
+              </div>
             </div>   
           </div>
           <h3 className="project-title">My Top Nine</h3>
           <div className="project-box">
             <div className="project-content">
-              <a href="https://unsplash.com/photos/HkTMcmlMOUQ">
+              <div className="project-container">
                 <div className="content-overlay"></div>
                 <img className="content-image" src={topnine} alt="My Top Nine" />
                 <div className="content-details fadeIn-bottom">
                   <h3 className="content-title">- My Top Nine -</h3>
-                  <p className="content-text">This was my first group project at Lambda School. I was the UI Designer on the team. This is the first landing page that I created on my own.</p>
+                  <p className="content-text">My first group project at Lambda School. I was the UI Designer on the team. This is the first landing page that I created on my own.</p>
+                  <div className="content-links">
+                  <a href="https://github.com/AJLambda/MyTopNine" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faGithub} className="github-icon" />
+                  </a>
+                  <a href="https://mytopnine.netlify.com" target="_blank" rel="noopener noreferrer">
+                  <div className="fa fa-link fa-3x"/>
+                  </a>
+                  </div>
                 </div>
-              </a>
+              </div>
             </div>   
           </div>
           <h3 className="project-title">LambdaFIT</h3>
           <div className="project-box">
             <div className="project-content">
-              <a href="https://unsplash.com/photos/HkTMcmlMOUQ">
+              <div className="project-container">
                 <div className="content-overlay"></div>
                 <img className="content-image" src={lambdafit} alt="Lambda Fit" />
                 <div className="content-details fadeIn-bottom">
                   <h3 className="content-title">- LambdaFIT -</h3>
-                  <p className="content-text">This was another group project I worked on at Lambda School. I was a Back End Developer on the team. I worked in collaboration with a fellow Back End Devloper and a Front End Developer.</p>
+                  <p className="content-text">This was another group project I worked on at Lambda School. I was a Back End Developer on the team. I worked in collaboration with a Front End Developer.</p>
+                  <div className="content-links">
+                  <a href="https://github.com/weight-lifting-app" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faGithub} className="github-icon" />
+                  </a>
+                  <a href="https://infallible-brattain-b0f591.netlify.com/" target="_blank" rel="noopener noreferrer">
+                  <div className="fa fa-link fa-3x"/>
+                  </a>
+                  </div>
                 </div>
-              </a>
+                </div>
             </div>   
           </div>
 
