@@ -915,57 +915,68 @@
 
 /* Icons Grid */
 
-	ul.icons-grid {
-		list-style: none;
-		padding: 0;
-		position: relative;
-
-		li {
-			display: block;
-			float: left;
-			padding: (_size(element-margin) * 1.5) 0;
-			width: 50%;
-
-			h3 {
-				margin: 0;
-			}
-
-			&:nth-child(2n + 1) {
-				box-shadow: inset -1px 0 0 0 _palette(border), 1px 0 0 0 _palette(border);
-			}
-
-			&:nth-child(2n + 3) {
-				&:before {
-					background: _palette(border);
-					content: '';
-					display: block;
-					height: 2px;
-					margin-top: (_size(element-margin) * -1.5);
-					position: absolute;
-					width: 100%;
-				}
-			}
-		}
-
-		&:after {
-			clear: both;
-			content: '';
-			display: block;
-		}
-
-		.icons-img1 {
-			width: 100px;
-			height: 150px;
-		}
-		.icons-img2 {
-			width: 150px;
-			height: 150px;
-		}
+	.icons-wrapper {
+		
 	}
-	.tools-img {
-		width: 80%;
-		height: 300px;
+
+	.icons-grid {
+		margin: 0 5%;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+
 	}
+
+	// ul.icons-grid {
+	// 	list-style: none;
+	// 	padding: 0;
+	// 	position: relative;
+
+	// 	li {
+	// 		display: block;
+	// 		float: left;
+	// 		padding: (_size(element-margin) * 1.5) 0;
+	// 		width: 50%;
+
+	// 		h3 {
+	// 			margin: 0;
+	// 		}
+
+	// 		&:nth-child(2n + 1) {
+	// 			box-shadow: inset -1px 0 0 0 _palette(border), 1px 0 0 0 _palette(border);
+	// 		}
+
+	// 		&:nth-child(2n + 3) {
+	// 			&:before {
+	// 				background: _palette(border);
+	// 				content: '';
+	// 				display: block;
+	// 				height: 2px;
+	// 				margin-top: (_size(element-margin) * -1.5);
+	// 				position: absolute;
+	// 				width: 100%;
+	// 			}
+	// 		}
+	// 	}
+
+	// 	&:after {
+	// 		clear: both;
+	// 		content: '';
+	// 		display: block;
+	// 	}
+
+		.icons-img {
+			width: 160px;
+			height: 230px;
+		}
+	// 	.icons-img2 {
+	// 		width: 150px;
+	// 		height: 150px;
+	// 	}
+	// }
+	// .tools-img {
+	// 	width: 80%;
+	// 	height: 300px;
+	// }
 
 
 /* Actions */

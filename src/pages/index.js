@@ -1,7 +1,7 @@
 import React from 'react';
 import Scrollspy from 'react-scrollspy';
-import Flip from 'react-reveal/Flip';
 import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
@@ -10,12 +10,18 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Scroll from '../components/Scroll';
 import overLayPic from '../assets/images/overlay.png';
-import nodeimg from '../assets/images/nodeimg.jpg';
-import htmlimg from '../assets/images/html5.jpg';
-import jsimg from '../assets/images/jsimg.png';
-import cssimg from '../assets/images/cssimg.png';
+import nodeimg from '../assets/images/node.png';
+import htmlimg from '../assets/images/html.png';
+// import jsimg from '../assets/images/jsimg.png';
+import cssimg from '../assets/images/css3.png';
+import gitimg from '../assets/images/git.png';
+import reactimg from '../assets/images/react.png';
+import reduximg from '../assets/images/redux.png';
+import sqlimg from '../assets/images/sql.png';
+import pythonimg from '../assets/images/python.png';
+import jsimg from '../assets/images/Javascript.png';
 // import me from '../assets/images/me.jpg'
-import austin from '../assets/images/austinjames3.png'
+import austin from '../assets/images/austinjames3.png';
 import riy from '../assets/images/riy8.png';
 import safespace from '../assets/images/safespace6.png';
 import topnine from '../assets/images/topnine.png';
@@ -73,44 +79,41 @@ const IndexPage = () => (
           </header>
           <Fade bottom>
           <p>
-            These are some of the languages/tools that I am currently working with.
+            These are some of the languages and tools that I use.
           </p>
           </Fade>
-          {/* <img src={tools} alt="tools" className="tools-img"/> */}
-          <ul className="icons-grid">
-            <li>
+          
+          <Zoom big cascade>
+          <div className="icons-grid">
               <div className="icons-wrapper">
-                <Flip>
-                <img src={htmlimg} alt="html5" className="icons-img1"/>
-                </Flip>
+                <img src={htmlimg} alt="html5" className="icons-img"/>
               </div>
-              <h3>Html5</h3>
-            </li>
-            <li>
               <div className="icons-wrapper">
-              <Flip>
-                <img src={cssimg} alt="css" className="icons-img1"/>
-                </Flip>
+                <img src={cssimg} alt="css" className="icons-img"/>
               </div>
-              <h3>CSS</h3>
-            </li>
-            <li>
+            <div className="icons-wrapper">
+                <img src={jsimg} alt="css" className="icons-img"/>
+              </div>
               <div className="icons-wrapper">
-              <Flip>
-                <img src={jsimg} alt="js" className="icons-img2"/>
-                </Flip>
+                <img src={nodeimg} alt="js" className="icons-img"/>
               </div>
-              <h3>Javascript</h3>
-            </li>
-            <li>
               <div className="icons-wrapper">
-              <Flip>
-                <img src={nodeimg} alt="nodejs" className="icons-img2"/>
-                </Flip>
+                <img src={reactimg} alt="nodejs" className="icons-img"/>
               </div>
-              <h3>NodeJS</h3>
-            </li>
-          </ul>
+              <div className="icons-wrapper">
+                <img src={reduximg} alt="nodejs" className="icons-img"/>
+              </div>
+            <div className="icons-wrapper">            
+                <img src={pythonimg} alt="nodejs" className="icons-img"/>
+              </div>
+            <div className="icons-wrapper">             
+                <img src={sqlimg} alt="nodejs" className="icons-img"/>
+              </div>
+            <div className="icons-wrapper">              
+                <img src={gitimg} alt="nodejs" className="icons-img"/>
+              </div>
+          </div>
+          </Zoom>
         </div>
         <Scroll type="id" element="three">
           <a href="#three">
