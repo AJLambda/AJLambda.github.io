@@ -29,19 +29,21 @@ import lambdafit from '../assets/images/lambdafit.png';
 
 
 const sections = [
-  { id: 'one', bg: require('../assets/images/hb1.jpg') },
-  { id: 'two', bg: require('../assets/images/code2.jpg') },
-  { id: 'three', bg: require('../assets/images/pic03.jpg') },
+  
+  { id: 'one', bg: require('../assets/images/rock2.jpg') },
+  { id: 'two', bg: require('../assets/images/rock2.jpg') },
+  { id: 'three', bg: require('../assets/images/rock2.jpg') },
+  { id: 'footer', bg: require('../assets/images/rocksnoaustin.jpg') },
 ];
 const IndexPage = () => (
   <Layout>
-    <Header />
+    <Header id="header"/>
 
     <section id="one" className="main special">
       <div className="container">
-        <span className="image fit primary">
-          <img src={sections[0].bg} alt="background1" />
-        </span>
+        {/* <span className="image fit primary">
+          <img src={sections[2].bg} alt="background1" />
+        </span> */}
         <div className="content">
           <header className="major">
             <img className="profile-img" src={austin} alt="Austin" />
@@ -49,11 +51,11 @@ const IndexPage = () => (
           </header>
           <Fade bottom>
           <p>
-            I am 28 year old web developer student at Lambda School. I love to create, design, and solve problems. 
+            I am a 27 year old web developer student at Lambda School. I love to create, design, and solve problems. 
           </p>
           </Fade>
         </div>
-        <Scroll type="id" element="two">
+        <Scroll offset={10} type="id" element="two">
           <a href="#two" className="goto-next ">
             <div className="center-con">
               <div className="round">
@@ -70,71 +72,9 @@ const IndexPage = () => (
 
     <section id="two" className="main special">
       <div className="container">
-        <span className="image fit primary">
-          <img src={sections[1].bg} alt="background2" />
-        </span>
-        <div className="content">
-          <header className="major">
-            <h2>Experience</h2>
-          </header>
-          <Fade bottom>
-          <p>
-            These are some of the languages and tools that I use.
-          </p>
-          </Fade>
-          
-          <Zoom big cascade>
-          <div className="icons-grid">
-              <div className="icons-wrapper">
-                <img src={htmlimg} alt="html5" className="icons-img"/>
-              </div>
-              <div className="icons-wrapper">
-                <img src={cssimg} alt="css" className="icons-img"/>
-              </div>
-            <div className="icons-wrapper">
-                <img src={jsimg} alt="css" className="icons-img"/>
-              </div>
-              <div className="icons-wrapper">
-                <img src={nodeimg} alt="js" className="icons-img"/>
-              </div>
-              <div className="icons-wrapper">
-                <img src={reactimg} alt="nodejs" className="icons-img"/>
-              </div>
-              <div className="icons-wrapper">
-                <img src={reduximg} alt="nodejs" className="icons-img"/>
-              </div>
-            <div className="icons-wrapper">            
-                <img src={pythonimg} alt="nodejs" className="icons-img"/>
-              </div>
-            <div className="icons-wrapper">             
-                <img src={sqlimg} alt="nodejs" className="icons-img"/>
-              </div>
-            <div className="icons-wrapper">              
-                <img src={gitimg} alt="nodejs" className="icons-img"/>
-              </div>
-          </div>
-          </Zoom>
-        </div>
-        <Scroll type="id" element="three">
-          <a href="#three">
-            <div className="center-con">
-              <div className="round">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </div>
-          </a>
-        </Scroll>
-      </div>
-    </section>
-
-    <section id="three" className="main special">
-      <div className="container">
-        <span className="image fit primary">
+        {/* <span className="image fit primary">
           <img src={sections[2].bg} alt="" />
-        </span>
+        </span> */}
         <div className="content">
           <header className="major">
             <h2>Portfolio</h2>
@@ -228,9 +168,71 @@ const IndexPage = () => (
                 </div>
             </div>   
           </div>
-
         </div>
-        <Scroll type="id" element="footer">
+        <Scroll offset={10} type="id" element="three">
+          <a href="#three">
+            <div className="center-con">
+              <div className="round">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </a>
+        </Scroll>
+      </div>
+    </section>
+
+
+    <section id="three" className="main special">
+      <div className="container">
+        {/* <span className="image fit primary">
+          <img src={sections[1].bg} alt="background2" />
+        </span> */}
+        <div className="content">
+          <header className="major">
+            <h2>Experience</h2>
+          </header>
+          <Fade bottom>
+          <p>
+            These are some of the languages and tools that I use.
+          </p>
+          </Fade>
+          
+          <Zoom big cascade>
+          <div className="icons-grid">
+              <div className="icons-wrapper">
+                <img src={htmlimg} alt="html5" className="icons-img"/>
+              </div>
+              <div className="icons-wrapper">
+                <img src={cssimg} alt="css" className="icons-img"/>
+              </div>
+            <div className="icons-wrapper">
+                <img src={jsimg} alt="css" className="icons-img"/>
+              </div>
+              <div className="icons-wrapper">
+                <img src={nodeimg} alt="js" className="icons-img"/>
+              </div>
+              <div className="icons-wrapper">
+                <img src={reactimg} alt="nodejs" className="icons-img"/>
+              </div>
+              <div className="icons-wrapper">
+                <img src={reduximg} alt="nodejs" className="icons-img"/>
+              </div>
+            <div className="icons-wrapper">            
+                <img src={pythonimg} alt="nodejs" className="icons-img"/>
+              </div>
+            <div className="icons-wrapper">             
+                <img src={sqlimg} alt="nodejs" className="icons-img"/>
+              </div>
+            <div className="icons-wrapper">              
+                <img src={gitimg} alt="nodejs" className="icons-img"/>
+              </div>
+          </div>
+          </Zoom>
+        </div>
+        <Scroll offset={10} type="id" element="footer">
           <a href="#footer" className="goto-next ">
             <div className="center-con">
               <div className="round">
@@ -289,12 +291,21 @@ const IndexPage = () => (
       componentTag={'div'}
     >
       {sections.map(s => {
+
+        console.log ("SSSSS", s)
         return (
           <div
             key={s.id}
             className="main-bg"
             id={`${s.id}-bg`}
-            style={{ backgroundImage: `url(${overLayPic}), url(${s.bg})` }}
+            style={{ 
+              backgroundImage: `url(${s.bg})`,
+              // backgroundColor:		_palette(accent2, bg),
+              backgroundAttachment:	'fixed',
+              // background-image:		url('../images/rock.jpg');
+              backgroundPosition:	'center',
+              backgroundRepeat:		'none',
+              backgroundSize:		'cover' }}
           />
         );
       })}

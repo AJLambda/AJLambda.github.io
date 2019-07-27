@@ -119,13 +119,23 @@
 			box-sizing: inherit;
 		}
 
+
+		/* filter effect */
+		// html {
+		// 	background-color:		_palette(accent2, bg);
+		// 	background-attachment:	fixed,						fixed;
+		// 	background-image:		url('../images/overlay.png'),	url('../images/rock.jpg');
+		// 	background-position:	top left,					center center;
+		// 	background-repeat:		repeat,						none;
+		// 	background-size:		auto,						cover;
+		// }
 	html {
 		background-color:		_palette(accent2, bg);
-		background-attachment:	fixed,						fixed;
-		background-image:		url('../images/overlay.png'),	url('../images/bg.jpg');
-		background-position:	top left,					center center;
-		background-repeat:		repeat,						none;
-		background-size:		auto,						cover;
+		background-attachment:	fixed;
+		background-image:		url('../images/rocksaustin.jpg');
+		background-position:	center center;
+		background-repeat:		none;
+		background-size:		cover;
 	}
 
 	html {
@@ -916,11 +926,12 @@
 /* Icons Grid */
 
 	.icons-wrapper {
-		
+	
 	}
 
 	.icons-grid {
-		margin: 0 5%;
+		width: 100%;
+		// margin: 0 3%;
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 
@@ -1875,6 +1886,16 @@
 				}
 			}
 
+		/* Section */
+
+			#one {
+				height: 100vh;
+
+				.container {
+				height: 100vh;
+				}
+			}
+
 		/* Footer */
 
 			#footer {
@@ -1918,18 +1939,16 @@
 					}
 				}
 
-				.goto-next {
-					display: none;
-				}
+			
 			}
 
 		/* Header */
 
 			#header {
-				height: 80vh;
+				height: 100vh;
 
 				&:after {
-					height: 80vh;
+					height: 100vh;
 				}
 
 				header {
@@ -1948,6 +1967,12 @@
 					display: none;
 				}
 			}
+
+		/* Section */
+
+		.icons-grid {
+			grid-template-columns: 1fr 1fr;
+		}
 
 		/* Footer */
 
