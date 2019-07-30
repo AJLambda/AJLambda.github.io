@@ -16,6 +16,7 @@
     "@fortawesome/free-regular-svg-icons": "^5.9.0",
     "@fortawesome/free-solid-svg-icons": "^5.9.0",
     "@fortawesome/react-fontawesome": "^0.1.4",
+    "@material-ui/core": "^4.3.0",
     "gatsby": "^2.4.3",
     "gatsby-plugin-manifest": "^2.1.1",
     "gatsby-plugin-offline": "^2.1.0",
@@ -28,6 +29,7 @@
     "react-images": "^0.5.19",
     "react-reveal": "^1.2.2",
     "react-scrollspy": "^3.4.0",
+    "react-tooltip": "^3.10.0",
     "smoothscroll-polyfill": "^0.4.4"
   },
   "scripts": {

@@ -132,8 +132,8 @@
 	html {
 		background-color:		_palette(accent2, bg);
 		background-attachment:	fixed;
-		background-image:		url('../images/rocksaustin.jpg');
-		background-position:	center center;
+		background-image:		url('../images/cloudsaustin11.gif');
+		background-position:	center;
 		background-repeat:		none;
 		background-size:		cover;
 	}
@@ -930,6 +930,7 @@
 	}
 
 	.icons-grid {
+		margin: 0 auto;
 		width: 100%;
 		// margin: 0 3%;
 		display: grid;
@@ -1516,10 +1517,20 @@
 		.github-icon {
 			color: _palette(sandstone);
 			// margin-right: 30px;
+
+			&:hover {
+				// color: _palette(burnt-orange);
+				opacity: 0.7;
+			}
 		}
 
 		.fa-link {
 			color: _palette(sandstone);
+
+			&:hover {
+				opacity: 0.7;
+				// color: _palette(burnt-orange);
+			}
 		}
 
 		.content-title {
@@ -1701,6 +1712,21 @@
 			// padding: 0 5%;
 		}
 
+		/* Experience */
+
+		.icons-container {
+			margin: 0 10%;
+		}
+
+		.icons-grid {
+			margin: 0 auto;
+		}
+
+		.icons-img {
+			width: 201px;
+			height: 295px;
+
+		}
 		/* Projects */
 
 		// .project-content .content-overlay {
@@ -1744,6 +1770,8 @@
 			line-height: 1em;
 			// padding: 0 5%;
 		}
+
+		/* Projects */
 	
 		.github-icon {
 			// margin-right: 30px;
@@ -1811,6 +1839,17 @@
 			body, input, select, textarea {
 				font-size: 12pt;
 			}
+
+		/* Experience */
+
+		.icons-grid {
+			
+		}
+		
+		.icons-img {
+			width: 130px;
+			height: 191px;
+		}
 
 		/* Projects */
 

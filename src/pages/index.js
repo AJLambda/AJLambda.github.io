@@ -1,5 +1,7 @@
 import React from 'react';
+import Tooltip from '@material-ui/core/Tooltip';
 import Scrollspy from 'react-scrollspy';
+import UiZoom from '@material-ui/core/Fade';
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -28,12 +30,14 @@ import topnine from '../assets/images/topnine.png';
 import lambdafit from '../assets/images/lambdafit.png';
 
 
+
+
 const sections = [
   
-  { id: 'one', bg: require('../assets/images/rock2.jpg') },
-  { id: 'two', bg: require('../assets/images/rock2.jpg') },
-  { id: 'three', bg: require('../assets/images/rock2.jpg') },
-  { id: 'footer', bg: require('../assets/images/rocksnoaustin.jpg') },
+  { id: 'one', bg: require('../assets/images/rocks.jpg') },
+  { id: 'two', bg: require('../assets/images/rocks.jpg') },
+  { id: 'three', bg: require('../assets/images/rocks.jpg') },
+  { id: 'footer', bg: require('../assets/images/rocks.jpg') },
 ];
 const IndexPage = () => (
   <Layout>
@@ -81,7 +85,7 @@ const IndexPage = () => (
           </header>
           <Fade bottom>
           <p>
-            I have created many projects since I joined Lambda School. I enrolled in the Full Stack program to diversify my studies and gain a wide array of knowledge about how websites and applications are made. These are some of my most notable creations so far.
+            I have created many projects since I joined Lambda School. I enrolled in the Full Stack program to learn how to build complete websites and applications. These are some of my most notable creations so far.
           </p>
           </Fade>
           <h3 className="project-title">Review It Yourself</h3>
@@ -94,12 +98,16 @@ const IndexPage = () => (
                   <h3 className="content-title">- Review It Yourself -</h3>
                   <p className="content-text">My capstone project with Lambda School. I worked as a Full Stack Web Developer on an amazing team. We spent five weeks building the app from the ground up.</p>
                   <div className="content-links">
+                  <Tooltip TransitionComponent={UiZoom} title="Code">
                   <a href="https://github.com/labs13-how-to" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faGithub} className="github-icon" />
+                  <FontAwesomeIcon icon={faGithub} className="github-icon"/>
                   </a>
+                  </Tooltip>
+                  <Tooltip TransitionComponent={UiZoom} title="URL">
                   <a href="https://review-it-yourself.com/" target="_blank" rel="noopener noreferrer">
-                  <div className="fa fa-link fa-3x"/>
+                  <div className="fa fa-link fa-3x" />
                   </a>
+                  </Tooltip>
                   </div>
                 </div>
               </div>
@@ -115,12 +123,16 @@ const IndexPage = () => (
                   <h3 className="content-title">- Safe Space -</h3>
                   <p className="content-text">A project I created during my time at Lambda School. I worked as the Front End Developer in collaboration with a UI Developer and two Back End Developers.</p>
                   <div className="content-links">
+                  <Tooltip TransitionComponent={UiZoom} title="Code">
                   <a href="https://github.com/AJLambda/safespace" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faGithub} className="github-icon" />
+                  <FontAwesomeIcon icon={faGithub} className="github-icon"/>
                   </a>
+                  </Tooltip>
+                  <Tooltip TransitionComponent={UiZoom} title="URL">
                   <a href="https://safespace-frontend.netlify.com/" target="_blank" rel="noopener noreferrer">
                   <div className="fa fa-link fa-3x"/>
                   </a>
+                  </Tooltip>
                   </div>
                 </div>
               </div>
@@ -136,12 +148,16 @@ const IndexPage = () => (
                   <h3 className="content-title">- My Top Nine -</h3>
                   <p className="content-text">My first group project at Lambda School. I was the UI Designer on the team. This is the first landing page that I created on my own.</p>
                   <div className="content-links">
+                  <Tooltip TransitionComponent={UiZoom} title="Code">
                   <a href="https://github.com/AJLambda/MyTopNine" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faGithub} className="github-icon" />
+                  <FontAwesomeIcon icon={faGithub} className="github-icon"/>
                   </a>
+                  </Tooltip>
+                  <Tooltip TransitionComponent={UiZoom} title="URL">
                   <a href="https://mytopnine.netlify.com" target="_blank" rel="noopener noreferrer">
                   <div className="fa fa-link fa-3x"/>
                   </a>
+                  </Tooltip>
                   </div>
                 </div>
               </div>
@@ -157,12 +173,16 @@ const IndexPage = () => (
                   <h3 className="content-title">- LambdaFIT -</h3>
                   <p className="content-text">This was another group project I worked on at Lambda School. I was a Back End Developer on the team. I worked in collaboration with a Front End Developer.</p>
                   <div className="content-links">
+                  <Tooltip TransitionComponent={UiZoom} title="Code">
                   <a href="https://github.com/weight-lifting-app" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faGithub} className="github-icon" />
                   </a>
+                  </Tooltip>
+                  <Tooltip TransitionComponent={UiZoom} title="URL">
                   <a href="https://infallible-brattain-b0f591.netlify.com/" target="_blank" rel="noopener noreferrer">
                   <div className="fa fa-link fa-3x"/>
                   </a>
+                  </Tooltip>
                   </div>
                 </div>
                 </div>
@@ -200,6 +220,7 @@ const IndexPage = () => (
           </p>
           </Fade>
           
+          <div className="icons-container">
           <Zoom big cascade>
           <div className="icons-grid">
               <div className="icons-wrapper">
@@ -231,6 +252,7 @@ const IndexPage = () => (
               </div>
           </div>
           </Zoom>
+          </div>
         </div>
         <Scroll offset={10} type="id" element="footer">
           <a href="#footer" className="goto-next ">
@@ -291,8 +313,6 @@ const IndexPage = () => (
       componentTag={'div'}
     >
       {sections.map(s => {
-
-        console.log ("SSSSS", s)
         return (
           <div
             key={s.id}
@@ -302,7 +322,7 @@ const IndexPage = () => (
               backgroundImage: `url(${s.bg})`,
               // backgroundColor:		_palette(accent2, bg),
               backgroundAttachment:	'fixed',
-              // background-image:		url('../images/rock.jpg');
+              // backgroundImage:		url('../images/rocksaustin.jpg'),
               backgroundPosition:	'center',
               backgroundRepeat:		'none',
               backgroundSize:		'cover' }}
