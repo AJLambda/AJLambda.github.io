@@ -22,7 +22,8 @@
 		large:   ( 981px,  1680px ),
 		medium:  ( 737px,  980px  ),
 		small:   ( 481px,  736px  ),
-		xsmall:  ( null,   480px  )
+		xsmall:  ( null,   480px  ),
+		xxsmall: ( null,   370px  )
 	));
 
 // Mixins.
@@ -113,6 +114,7 @@
 	// Based on css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
 		html {
 			box-sizing: border-box;
+			
 		}
 
 		*, *:before, *:after {
@@ -129,14 +131,37 @@
 		// 	background-repeat:		repeat,						none;
 		// 	background-size:		auto,						cover;
 		// }
+	// html {
+	// 	background-color:		_palette(accent2, bg);
+	// 	background-attachment:	fixed;
+	// 	background-image:		url('../images/cloudsaustin.gif');
+	// 	background-position:	center center;
+	// 	background-repeat:		no-repeat;
+	// 	background-size:		cover;
+	// 	-webkit-background-size:cover;
+	// 	-moz-background-size:cover;
+	// 	-o-background-size:cover;
+	// 	width: 100%;
+	// 	height:100%;
+	
+	// }
+
 	html {
 		background-color:		_palette(accent2, bg);
 		background-attachment:	fixed;
-		background-image:		url('../images/cloudsaustin11.gif');
-		background-position:	center;
-		background-repeat:		none;
+		background-image:		url('../images/cloudsaustin.gif');
+		background-position:	center center;
+		background-repeat:		no-repeat;
 		background-size:		cover;
+		-webkit-background-size:cover;
+		-moz-background-size:cover;
+		-o-background-size:cover;
+		width: 100%;
+		height:100%;
+		
+	
 	}
+
 
 	html {
 
@@ -1304,7 +1329,7 @@
 		}
 
 		.center-con {
-			
+			// margin-top: 30px;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -2032,10 +2057,24 @@
 
 		/* Basic */
 
-			html, body {
-				min-width: 320px;
-			}
+		
 
+		html:before {
+			content: "";
+			display: block;
+			position: fixed;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -10;
+			background: url('../images/austinlake3.gif') no-repeat center center;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		  }
+			  
 		/* List */
 
 			ul {
@@ -2123,6 +2162,33 @@
 				}
 			}
 
+		/* Projects */
+
+			.project-box {
+				width: 90%;
+			}
+	
+			.github-icon {
+				// margin-right: 30px;
+				font-size: 60px;
+			}
+	
+			.fa-link {
+				font-size: 60px;
+			}
+	
+			.content-title {
+				font-size: 1em;
+			}
+	
+			.content-text {
+				font-size: .8em;
+				line-height: 1.2em;
+			}
+			.content-title {
+				font-size: 1.3em;
+			}
+
 		/* Footer */
 
 			#footer {
@@ -2144,5 +2210,36 @@
 					}
 				}
 			}
+/* XXsmall */
 
+	@include breakpoint('<=xxsmall') {
+
+
+	/* Projects */
+
+	// .project-content {
+	// 	height: 200px;
+	// }
+	
+	.github-icon {
+		// margin-right: 30px;
+		font-size: 50px;
 	}
+
+	.fa-link {
+		font-size: 50px;
+	}
+
+	.content-title {
+		font-size: 1em;
+	}
+
+	.content-text {
+		font-size: .7em;
+		line-height: 1.2em;
+	}
+
+}
+	
+
+}

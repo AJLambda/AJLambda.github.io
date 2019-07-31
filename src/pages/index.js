@@ -14,7 +14,6 @@ import Scroll from '../components/Scroll';
 import overLayPic from '../assets/images/overlay.png';
 import nodeimg from '../assets/images/node.png';
 import htmlimg from '../assets/images/html.png';
-// import jsimg from '../assets/images/jsimg.png';
 import cssimg from '../assets/images/css3.png';
 import gitimg from '../assets/images/git.png';
 import reactimg from '../assets/images/react.png';
@@ -22,14 +21,11 @@ import reduximg from '../assets/images/redux.png';
 import sqlimg from '../assets/images/sql.png';
 import pythonimg from '../assets/images/python.png';
 import jsimg from '../assets/images/Javascript.png';
-// import me from '../assets/images/me.jpg'
-import austin from '../assets/images/austinjames3.png';
-import riy from '../assets/images/riy8.png';
-import safespace from '../assets/images/safespace6.png';
+import austin from '../assets/images/austinjames.png';
+import riy from '../assets/images/reviewityourself.png';
+import safespace from '../assets/images/safespace.png';
 import topnine from '../assets/images/topnine.png';
 import lambdafit from '../assets/images/lambdafit.png';
-
-
 
 
 const sections = [
