@@ -21,9 +21,7 @@ export default function Footer() {
         <li>
           Design: <a href="http://html5up.net">HTML5 UP</a>
         </li>
-        <li>
-          Demo Images: <a href="http://unsplash.com">Unsplash</a>
-        </li>
+        <li>Customization: Austin James</li>
       </ul>
     </footer>
   );
