@@ -66,6 +66,7 @@ const IndexPage = () => (
       </div>
     </section>
 
+    {/* Section 2 */}
     <section id="two" className="main special">
       <div className="container">
         <div className="content">
