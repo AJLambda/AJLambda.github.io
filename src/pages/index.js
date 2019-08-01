@@ -55,10 +55,10 @@ const IndexPage = () => (
           <a href="#two" className="goto-next ">
             <div className="center-con">
               <div className="round">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+                <span />
+                <span />
+                <span />
+                <span />
               </div>
             </div>
           </a>
@@ -85,7 +85,7 @@ const IndexPage = () => (
               <div className="project-box">
                 <div className="project-content">
                   <div className="project-container">
-                    <div className="content-overlay"></div>
+                    <div className="content-overlay" />
                     <img
                       className="content-image1"
                       src={riy}
@@ -134,7 +134,7 @@ const IndexPage = () => (
               <div className="project-box">
                 <div className="project-content">
                   <div className="project-container">
-                    <div className="content-overlay"></div>
+                    <div className="content-overlay" />
                     <img
                       className="content-image"
                       src={safespace}
@@ -183,7 +183,7 @@ const IndexPage = () => (
               <div className="project-box">
                 <div className="project-content">
                   <div className="project-container">
-                    <div className="content-overlay"></div>
+                    <div className="content-overlay" />
                     <img
                       className="content-image"
                       src={topnine}
@@ -233,7 +233,7 @@ const IndexPage = () => (
             <div className="project-box">
               <div className="project-content">
                 <div className="project-container">
-                  <div className="content-overlay"></div>
+                  <div className="content-overlay" />
                   <img
                     className="content-image"
                     src={lambdafit}
@@ -280,10 +280,10 @@ const IndexPage = () => (
           <a href="#three">
             <div className="center-con" id="arrow">
               <div className="round">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+                <span />
+                <span />
+                <span />
+                <span />
               </div>
             </div>
           </a>
@@ -338,10 +338,10 @@ const IndexPage = () => (
           <a href="#footer" className="goto-next ">
             <div className="center-con" id="arrow">
               <div className="round">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+                <span />
+                <span />
+                <span />
+                <span />
               </div>
             </div>
           </a>
