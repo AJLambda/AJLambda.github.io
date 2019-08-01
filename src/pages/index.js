@@ -19,7 +19,7 @@ import reactimg from '../assets/images/react.png';
 import reduximg from '../assets/images/redux.png';
 import sqlimg from '../assets/images/sql.png';
 import pythonimg from '../assets/images/python.png';
-import jsimg from '../assets/images/Javascript.png';
+import jsimg from '../assets/images/javascript.png';
 import austin from '../assets/images/austinjames.png';
 import riy from '../assets/images/reviewityourself.png';
 import safespace from '../assets/images/safespace.png';
