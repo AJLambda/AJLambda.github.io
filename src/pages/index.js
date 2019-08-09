@@ -32,10 +32,10 @@ const sections = [
   { id: 'three', bg: require('../assets/images/rocks.jpg') },
   { id: 'footer', bg: require('../assets/images/rocks.jpg') },
 ];
+
 const IndexPage = () => (
   <Layout>
     <Header id="header" />
-
     <section id="one" className="main special">
       <div className="container">
         <div className="content">

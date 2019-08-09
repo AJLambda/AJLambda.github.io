@@ -217,6 +217,8 @@ html {
 	-o-background-size: cover;
 	width: 100%;
 	height: 100%;
+	// transition: height 999999s;
+	
 }
 
 
@@ -234,14 +236,14 @@ html {
 	}
 
 	&.is-touch {
-		height: 100vh;
+		height: 100%;
 		overflow: hidden;
 
 		#wrapper {
 			-webkit-backface-visibility: hidden;
 			-webkit-overflow-scrolling: touch;
 			-webkit-transform: translate3d(0, 0, 0);
-			height: 100vh;
+			height: 100%;
 			overflow: auto;
 		}
 	}
@@ -1634,15 +1636,18 @@ button,
 /* Header */
 
 #header {
-	height: 100vh;
+	height: 100%;
 	position: relative;
 	text-align: center;
+	transition: height 999999s;
 
 	&:after {
 		content: '';
 		display: inline-block;
 		height: 100vh;
 		vertical-align: middle;
+		transition: height 999999s;
+		
 	}
 
 	header {
@@ -1961,10 +1966,10 @@ button,
 	/* Section */
 
 	#one {
-		height: 100vh;
+		// height: 100vh;
 
 		.container {
-			height: 100vh;
+			// height: 100vh;
 		}
 	}
 
@@ -2017,11 +2022,11 @@ button,
 	/* Header */
 
 	#header {
-		height: 100vh;
+		// height: 100%;
 
-		&:after {
-			height: 100vh;
-		}
+		// &:after {
+		// 	height: 100%;
+		// }
 
 		header {
 			padding-bottom: 0;
@@ -2064,23 +2069,43 @@ button,
 	$size-padding-lr: 1em;
 
 	/* Basic */
+	
 
-
-
-	html:before {
-		content: "";
-		display: block;
-		position: fixed;
+	html {
+		// overflow: hidden;
+		background-position: center center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+	// background-size: cover;
+	// -webkit-background-size: cover;
+	// -moz-background-size: cover;
+	// -o-background-size: cover;
 		left: 0;
 		top: 0;
+// 		min-width: 100%;
+//   min-height: 100%;
 		width: 100%;
-		height: 100%;
-		z-index: -10;
-		background: url('../images/austinlake3.gif') no-repeat center center;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
+		height: 100vh;
+		// min-height: -webkit-fill-available;
+		// z-index: -10;
+		// transition: height 999999s;
+		background-image: url('../images/austinlake3.gif');
+		// overflow: hidden;
+		// overflow-y: scroll;
+		// -webkit-overflow-scrolling:touch;
+	}
+	
+	
+	
+	html:before {
+		// position: fixed;
+		// left: 0;
+		// top: 0;
+		// width: 100%;
+		// height: 100vh;
+		// z-index: -10;
+		// background-image: url('../images/austinlake3.gif');
+		// background-size: cover;
 	}
 
 	/* List */

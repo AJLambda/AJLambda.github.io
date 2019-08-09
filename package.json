@@ -31,7 +31,8 @@
     "react-reveal": "^1.2.2",
     "react-scrollspy": "^3.4.0",
     "react-tooltip": "^3.10.0",
-    "smoothscroll-polyfill": "^0.4.4"
+    "smoothscroll-polyfill": "^0.4.4",
+    "vh-for-mobile": "^1.0.1"
   },
   "scripts": {
     "develop": "gatsby develop",
