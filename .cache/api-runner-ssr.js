@@ -1,13 +1,4 @@
-var plugins = [{
-      plugin: require('/Users/jeffborton/Documents/AJLambda.github.io/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
-      options: {"plugins":[]},
-    },{
-      plugin: require('/Users/jeffborton/Documents/AJLambda.github.io/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"Highlights","short_name":"Landing","start_url":"/gatsby-starter-highlights/","background_color":"#663399","theme_color":"#663399","display":"standalone","icon":"src/assets/img/website-icon.png"},
-    },{
-      plugin: require('/Users/jeffborton/Documents/AJLambda.github.io/node_modules/gatsby-plugin-offline/gatsby-ssr'),
-      options: {"plugins":[]},
-    }]
+var plugins = []
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
 //   {
