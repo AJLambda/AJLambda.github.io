@@ -48,7 +48,7 @@ const IndexPage = () => (
 
           <p>
             I am a 27 year old web developer student at Lambda School. I love to
-            create, design, and solve problems.
+            create, design, and solve.
           </p>
         </div>
         <Scroll offset={10} type="id" element="two">
