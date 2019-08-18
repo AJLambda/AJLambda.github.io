@@ -47,8 +47,10 @@ const IndexPage = () => (
           </header>
 
           <p>
-            I am a 27 year old web developer student at Lambda School. I love to
-            create, design, and solve.
+            Hi! I am Austin James, a Full-Stack Web Developer living in Orange
+            County, California. I enjoy combining design and code to create
+            applications that are responsive and user friendly. It is my dream
+            to bring new ideas to life.
           </p>
         </div>
         <Scroll offset={10} type="id" element="two">
