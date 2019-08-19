@@ -1405,66 +1405,66 @@ button,
 		height: 75px;
 		border-radius: 100%;
 
+		span {
+			z-index: 999;
+			height: 2.25px;
+			margin: 1px;
+			width: 22.5px;
+			background-color: _palette(lagoon);
+			transition: 0.4s ease;
+		}
+	
+		span:first-child {
+			display: block;
+			position: absolute;
+			transform: rotate(45deg);
+			left: 25%;
+			bottom: 35%;
+		}
+	
+		span:nth-child(2) {
+			display: block;
+			position: absolute;
+			transform: rotate(-45deg);
+			left: 45%;
+			bottom: 35%;
+		}
+	
+		span:nth-child(3) {
+			display: block;
+			position: absolute;
+			transform: rotate(45deg);
+			left: 25%;
+			bottom: 54%;
+		}
+	
+		span:nth-child(4) {
+			display: block;
+			position: absolute;
+			transform: rotate(-45deg);
+			left: 45%;
+			bottom: 54%;
+		}
+	
+		&:hover span:nth-child(1) {
+			transform: rotate(-135deg);
+		}
+	
+		&:hover span:nth-child(2) {
+			transform: rotate(135deg);
+		}
+	
+		&:hover span:nth-child(3) {
+			transform: rotate(225deg);
+		}
+	
+		&:hover span:nth-child(4) {
+			transform: rotate(-225deg);
+		}
+
 		&:hover {
 			background-color: _palette(border2-bg);
 		}
-	}
-
-	span {
-		z-index: 999;
-		height: 2.25px;
-		margin: 1px;
-		width: 22.5px;
-		background-color: _palette(lagoon);
-		transition: 0.4s ease;
-	}
-
-	span:first-child {
-		display: block;
-		position: absolute;
-		transform: rotate(45deg);
-		left: 25%;
-		bottom: 35%;
-	}
-
-	span:nth-child(2) {
-		display: block;
-		position: absolute;
-		transform: rotate(-45deg);
-		left: 45%;
-		bottom: 35%;
-	}
-
-	span:nth-child(3) {
-		display: block;
-		position: absolute;
-		transform: rotate(45deg);
-		left: 25%;
-		bottom: 54%;
-	}
-
-	span:nth-child(4) {
-		display: block;
-		position: absolute;
-		transform: rotate(-45deg);
-		left: 45%;
-		bottom: 54%;
-	}
-
-	.round:hover span:nth-child(1) {
-		transform: rotate(-135deg);
-	}
-
-	.round:hover span:nth-child(2) {
-		transform: rotate(135deg);
-	}
-
-	.round:hover span:nth-child(3) {
-		transform: rotate(225deg);
-	}
-
-	.round:hover span:nth-child(4) {
-		transform: rotate(-225deg);
 	}
 }
 
@@ -1489,8 +1489,8 @@ button,
 	border-radius: 5px;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 	border-radius: 5px;
-	-webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+	-webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .project-box::after {
@@ -1504,8 +1504,8 @@ button,
 	height: 100%;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 	opacity: 0;
-	-webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+	-webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .project-box:hover {
@@ -1808,12 +1808,17 @@ button,
 	}
 
 	.content-title {
-		font-size: 1.5em;
+		font-size: 1.7em;
 	}
 
 	.content-text {
 		font-size: 1.2em;
 		line-height: 1.5em;
+	
+		span {
+			color: _palette(lagoon);
+			font-size: 1.2em;
+		}
 	}
 }
 
@@ -1841,7 +1846,8 @@ button,
 	}
 
 	.content-title {
-		font-size: 1em;
+		font-size: 1.7em;
+		font-weight: bold;
 	}
 
 	.content-text {
@@ -1849,9 +1855,6 @@ button,
 		line-height: 1.5em;
 	}
 
-	.content-title {
-		font-size: 1.3em;
-	}
 
 }
 
@@ -1875,7 +1878,7 @@ button,
 	}
 
 	.content-title {
-		font-size: 1em;
+		font-size: 1.2em;
 	}
 
 	.content-text {

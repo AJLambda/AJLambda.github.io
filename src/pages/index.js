@@ -48,9 +48,9 @@ const IndexPage = () => (
 
           <p>
             Hi! I am Austin James, a Full-Stack Web Developer living in Orange
-            County, California. I enjoy combining design and code to create
-            applications that are responsive and user friendly. It is my dream
-            to bring new ideas to life.
+            County, California. I combine design and code to create websites and
+            applications that are interactive, responsive, and performant. It is
+            my passion to bring ideas to life.
           </p>
         </div>
         <Scroll offset={10} type="id" element="two">
@@ -77,8 +77,9 @@ const IndexPage = () => (
           </header>
 
           <p>
-            I have worked on many projects while enrolled in the Full Stack
-            program. These are some of my most notable creations.
+            I have practiced Agile software development across multiple teams.
+            Each project has provided a unique learning experience working under
+            a different role. These are some of my most noteable creations.
           </p>
 
           <Fade>
@@ -96,9 +97,15 @@ const IndexPage = () => (
                     <div className="content-details fadeIn-bottom">
                       <h3 className="content-title">- Review It Yourself -</h3>
                       <p className="content-text">
-                        My capstone project at Lambda School. I worked as a Full
-                        Stack Web Developer on an amazing team. We spent five
-                        weeks building the app from the ground up.
+                        Review It Yourself is a web and iOS application that
+                        provides a central location for anyone looking to find
+                        reliable, highly-rated DIY projects with detailed
+                        step-by-step instructions, pictures and videos.
+                        <br />
+                        <br />
+                        <span>Full-Stack Developer</span>
+                        <br />
+                        react | redux | bootstrap | sass | node.js | express
                       </p>
                       <div className="content-links">
                         <Tooltip TransitionComponent={UiZoom} title="Code">
@@ -145,9 +152,14 @@ const IndexPage = () => (
                     <div className="content-details fadeIn-bottom">
                       <h3 className="content-title">- Safe Space -</h3>
                       <p className="content-text">
-                        A project I created during my time at Lambda School. I
-                        worked as the Front End Developer in collaboration with
-                        a UI Developer and two Back End Developers.
+                        Safe Space is a self care web application designed to
+                        send positive affirmations to yourself or loved ones via
+                        text message reminders throughout the day.
+                        <br />
+                        <br />
+                        <span>Front-End Developer</span>
+                        <br />
+                        react | redux | react-router | axios
                       </p>
                       <div className="content-links">
                         <Tooltip TransitionComponent={UiZoom} title="Code">
@@ -194,9 +206,14 @@ const IndexPage = () => (
                     <div className="content-details fadeIn-bottom">
                       <h3 className="content-title">- My Top Nine -</h3>
                       <p className="content-text">
-                        My first group project at Lambda School. I was the UI
-                        Designer on the team. This is the first landing page
-                        that I created on my own.
+                        MyTopNine is a social web application that lets users
+                        select their Top-Nine in a variety of categories
+                        (sports, video games, makeup, movies, etc..).
+                        <br />
+                        <br />
+                        <span>UI Designer</span>
+                        <br />
+                        html | css | less | javascript
                       </p>
                       <div className="content-links">
                         <Tooltip TransitionComponent={UiZoom} title="Code">
@@ -227,56 +244,62 @@ const IndexPage = () => (
               </div>
             </div>
           </Fade>
-        </div>
 
-        <Fade>
-          <div className="desktop-project">
-            <h3 className="project-title">LambdaFIT</h3>
-            <div className="project-box">
-              <div className="project-content">
-                <div className="project-container">
-                  <div className="content-overlay"></div>
-                  <img
-                    className="content-image"
-                    src={lambdafit}
-                    alt="Lambda Fit"
-                  />
-                  <div className="content-details fadeIn-bottom">
-                    <h3 className="content-title">- LambdaFIT -</h3>
-                    <p className="content-text">
-                      This was another group project I worked on at Lambda
-                      School. I was a Back End Developer on the team. I worked
-                      in collaboration with a Front End Developer.
-                    </p>
-                    <div className="content-links">
-                      <Tooltip TransitionComponent={UiZoom} title="Code">
-                        <a
-                          href="https://github.com/weight-lifting-app"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <FontAwesomeIcon
-                            icon={faGithub}
-                            className="github-icon"
-                          />
-                        </a>
-                      </Tooltip>
-                      <Tooltip TransitionComponent={UiZoom} title="URL">
-                        <a
-                          href="https://infallible-brattain-b0f591.netlify.com/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <div className="fa fa-link fa-3x" />
-                        </a>
-                      </Tooltip>
+          <Fade>
+            <div className="desktop-project">
+              <h3 className="project-title">LambdaFIT</h3>
+              <div className="project-box">
+                <div className="project-content">
+                  <div className="project-container">
+                    <div className="content-overlay"></div>
+                    <img
+                      className="content-image"
+                      src={lambdafit}
+                      alt="Lambda Fit"
+                    />
+                    <div className="content-details fadeIn-bottom">
+                      <h3 className="content-title">- LambdaFIT -</h3>
+                      <p className="content-text">
+                        LambdaFIT is a fitness web application that keeps logs
+                        of your personal workouts. Users can create and organize
+                        their exercises by amount lifted, reps completed, and
+                        body region worked on.
+                        <br />
+                        <br />
+                        <span>Back-End Developer</span>
+                        <br />
+                        node.js | express | knex | sqlite | postgres
+                      </p>
+                      <div className="content-links">
+                        <Tooltip TransitionComponent={UiZoom} title="Code">
+                          <a
+                            href="https://github.com/weight-lifting-app"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <FontAwesomeIcon
+                              icon={faGithub}
+                              className="github-icon"
+                            />
+                          </a>
+                        </Tooltip>
+                        <Tooltip TransitionComponent={UiZoom} title="URL">
+                          <a
+                            href="https://infallible-brattain-b0f591.netlify.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <div className="fa fa-link fa-3x" />
+                          </a>
+                        </Tooltip>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </Fade>
+          </Fade>
+        </div>
 
         <Scroll offset={10} type="id" element="three">
           <a href="#three">
@@ -297,10 +320,14 @@ const IndexPage = () => (
       <div className="container">
         <div className="content">
           <header className="major">
-            <h2>Experience</h2>
+            <h2>Skills</h2>
           </header>
 
-          <p>Some of the languages and tools that I use.</p>
+          <p>
+            I am always looking to expand my skill set with cutting-edge web
+            technology. My experience includes many different tools and
+            languages.
+          </p>
 
           <div className="icons-container">
             <Zoom big cascade>
