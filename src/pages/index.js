@@ -387,7 +387,10 @@ const IndexPage = () => (
 
             <div className="icons-container">
               <Zoom big cascade>
-                <div className="icons-grid">
+                <div
+                  className="icons-grid"
+              
+                >
                   <div className="icons-wrapper">
                     <img src={htmlimg} alt="html5" className="icons-img" />
                   </div>
