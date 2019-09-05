@@ -6,8 +6,6 @@ import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import Div100vh from 'react-div-100vh';
-
 import Layout from '../components/Layout';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -27,6 +25,7 @@ import safespace from '../assets/images/safespace.png';
 import topnine from '../assets/images/topnine.png';
 import lambdafit from '../assets/images/lambdafit.png';
 import lambdamud from '../assets/images/lambdamud1.png';
+import ReactImageAppear from 'react-image-appear';
 
 const sections = [
   { id: 'main', bg: require('../assets/images/rocks.jpg') },
@@ -36,9 +35,8 @@ const sections = [
 ];
 const IndexPage = () => (
   <Layout>
-    <Div100vh>
-      <Header id="header" />
-    </Div100vh>
+    <Header id="header" />
+
     <section id="main">
       <section id="one" className="main special">
         <div className="container">
@@ -387,10 +385,7 @@ const IndexPage = () => (
 
             <div className="icons-container">
               <Zoom big cascade>
-                <div
-                  className="icons-grid"
-              
-                >
+                <div className="icons-grid">
                   <div className="icons-wrapper">
                     <img src={htmlimg} alt="html5" className="icons-img" />
                   </div>
