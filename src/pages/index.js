@@ -25,7 +25,6 @@ import safespace from '../assets/images/safespace.png';
 import topnine from '../assets/images/topnine.png';
 import lambdafit from '../assets/images/lambdafit.png';
 import lambdamud from '../assets/images/lambdamud1.png';
-import ReactImageAppear from 'react-image-appear';
 
 const sections = [
   { id: 'main', bg: require('../assets/images/rocks.jpg') },
