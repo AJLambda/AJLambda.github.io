@@ -215,8 +215,8 @@ html {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	width: 100%;
-	height: 100%;
+	// width: 100%;
+	// height: 100%;
 }
 
 
@@ -400,7 +400,7 @@ pre {
 .container {
 	margin: 0 auto;
 	max-width: calc(100% - #{_size(element-margin) * 2});
-	width: 50%;
+	width: 60%;
 
 	&.xsmall {
 		width: (_size(container-width) * 0.25);
@@ -561,12 +561,12 @@ html {
 			background: _palette(accent2, bg);
 			content: '';
 			display: block;
-			height: 100%;
+			// height: 100%;
 			left: 0;
 			opacity: 0;
 			position: fixed;
 			top: 0;
-			width: 100%;
+			// width: 100%;
 			z-index: -1;
 		}
 
@@ -1470,7 +1470,15 @@ button,
 
 /* Project Section */
 
+.projects-container {
+display: grid; 
+grid-template-columns: 1fr 1fr;
 
+}
+
+.desktop-project {
+	// width: 50%;
+}
 
 .project-title {
 	display: none;
@@ -1482,7 +1490,7 @@ button,
 
 .project-box {
 	margin: 4% auto;
-	width: 80%;
+	width: 90%;
 	position: relative;
 	display: inline-block;
 	background-color: #fff;
@@ -1878,7 +1886,7 @@ button,
 	}
 
 	.content-title {
-		font-size: 1.2em;
+		font-size: 1.1em;
 	}
 
 	.content-text {
@@ -1921,6 +1929,15 @@ button,
 
 /* Medium */
 
+@media (max-width: 1040px)
+{
+	.projects-container {
+		display: grid; 
+		grid-template-columns: 1fr;
+		
+		}
+}
+
 @include breakpoint('<=medium') {
 
 	$size-padding-tb: 3em;
@@ -1961,13 +1978,21 @@ button,
 		}
 	}
 
+	/* Projects */
+
+	.projects-container {
+		display: grid; 
+		grid-template-columns: 1fr;
+		
+		}
+
 	/* Section */
 
 	#one {
-		height: 100vh;
+		// height: 100vh;
 
 		.container {
-			height: 100vh;
+			// height: 100vh;
 		}
 	}
 
@@ -2020,11 +2045,7 @@ button,
 	/* Header */
 
 	#header {
-		height: 100vh;
-
-		&:after {
-			height: 100vh;
-		}
+	
 
 		header {
 			padding-bottom: 0;
@@ -2066,24 +2087,14 @@ button,
 	$size-padding-tb: 3em;
 	$size-padding-lr: 1em;
 
-	/* Basic */
 
-
-
-	html:before {
-		content: "";
-		display: block;
-		position: fixed;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		z-index: -10;
-		background: url('../images/austinlake3.gif') no-repeat center center;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
+	html{
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
 		background-size: cover;
+		height: 100vh;
+		background-image: url('../images/austinlake3.gif');
 	}
 
 	/* List */

@@ -24,6 +24,7 @@
     "gatsby-plugin-sass": "^2.0.11",
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
+    "react-div-100vh": "^0.3.4",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "react-images": "^0.5.19",
