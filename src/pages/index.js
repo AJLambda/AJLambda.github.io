@@ -85,9 +85,10 @@ const IndexPage = () => (
               under a different role. These are some of my most noteable
               creations.
             </p>
+
             <div className="projects-container">
               <Fade>
-                <div className="desktop-project">
+                <div className="desktop-project" id="reviewityourself">
                   <h3 className="project-title">Review It Yourself</h3>
                   <div className="project-box">
                     <div className="project-content">
@@ -143,7 +144,7 @@ const IndexPage = () => (
               </Fade>
 
               <Fade>
-                <div className="desktop-project">
+                <div className="desktop-project" id="lambdamud">
                   <h3 className="project-title">- LambdaMUD -</h3>
                   <div className="project-box">
                     <div className="project-content">
@@ -161,7 +162,7 @@ const IndexPage = () => (
                             map and retro FX.
                             <br />
                             <br />
-                            <span>Full-Stack Developer</span>
+                            <span>UI/Front-End Developer</span>
                             <br />
                             react | bootstrap | css-grid | axios | python |
                             django
@@ -169,7 +170,7 @@ const IndexPage = () => (
                           <div className="content-links">
                             <Tooltip TransitionComponent={UiZoom} title="Code">
                               <a
-                                href="https://github.com/weight-lifting-app"
+                                href="https://github.com/CS20-BuildWeek-1/LambdaMUD-FrontEnd"
                                 target="_blank"
                                 rel="noopener noreferrer"
                               >
@@ -181,7 +182,7 @@ const IndexPage = () => (
                             </Tooltip>
                             <Tooltip TransitionComponent={UiZoom} title="URL">
                               <a
-                                href="https://infallible-brattain-b0f591.netlify.com/"
+                                href="https://lambdamudd.netlify.com/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                               >
@@ -197,7 +198,7 @@ const IndexPage = () => (
               </Fade>
 
               <Fade>
-                <div className="desktop-project">
+                <div className="desktop-project" id="safespace">
                   <h3 className="project-title">Safe Space</h3>
                   <div className="project-box">
                     <div className="project-content">
@@ -250,7 +251,7 @@ const IndexPage = () => (
               </Fade>
 
               <Fade>
-                <div className="desktop-project">
+                <div className="desktop-project" id="mytopnine">
                   <h3 className="project-title">My Top Nine</h3>
                   <div className="project-box">
                     <div className="project-content">
@@ -303,7 +304,7 @@ const IndexPage = () => (
               </Fade>
 
               <Fade>
-                <div className="desktop-project">
+                <div className="desktop-project" id="lambdafit">
                   <h3 className="project-title">LambdaFIT</h3>
                   <div className="project-box">
                     <div className="project-content">
