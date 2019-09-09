@@ -108,7 +108,7 @@ const IndexPage = () => (
                             <span>Full-Stack Developer</span>
                             <br />
                             react | redux | bootstrap | sass | node.js | express
-                            | filepond
+                            | passport | google-api | filepond
                           </p>
                           <div className="content-links">
                             <Tooltip TransitionComponent={UiZoom} title="Code">
@@ -156,13 +156,13 @@ const IndexPage = () => (
                           <h3 className="content-title">- LambdaMUD -</h3>
                           <p className="content-text">
                             Multi-User-Dungeon web app game with a custom made
-                            map and retro FX.
+                            map, room chat, and retro FX.
                             <br />
                             <br />
-                            <span>UI/Front-End Developer</span>
+                            <span>Full Stack Developer</span>
                             <br />
-                            react | bootstrap | css-grid | axios | python |
-                            django
+                            react | bootstrap | material-ui | css-grid | axios |
+                            python | django | pusher
                           </p>
                           <div className="content-links">
                             <Tooltip TransitionComponent={UiZoom} title="Code">
