@@ -105,7 +105,7 @@ const IndexPage = () => (
                             review and rate projects.
                             <br />
                             <br />
-                            <span>Full-Stack Developer</span>
+                            <span>Full Stack Developer</span>
                             <br />
                             react | redux | bootstrap | sass | node.js | express
                             | passport | google-api | filepond
@@ -156,7 +156,7 @@ const IndexPage = () => (
                           <h3 className="content-title">- LambdaMUD -</h3>
                           <p className="content-text">
                             Multi-User-Dungeon web app game with a custom made
-                            map, room chat, and retro FX.
+                            map, room chat, and retro Fx.
                             <br />
                             <br />
                             <span>Full Stack Developer</span>
@@ -213,7 +213,7 @@ const IndexPage = () => (
                             reminders throughout the day.
                             <br />
                             <br />
-                            <span>Front-End Developer</span>
+                            <span>Front End Developer</span>
                             <br />
                             react | redux | react-router | axios
                           </p>
@@ -319,7 +319,7 @@ const IndexPage = () => (
                             personal workouts.
                             <br />
                             <br />
-                            <span>Back-End Developer</span>
+                            <span>Back End Developer</span>
                             <br />
                             node.js | express | knex | sqlite | postgres
                           </p>

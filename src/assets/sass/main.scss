@@ -1709,6 +1709,20 @@ grid-template-columns: 1fr 1fr;
 	}
 }
 
+
+.content-title {
+	font-weight: 600;
+}
+.content-text {
+	font-family: "Cabin", sans-serif;
+	font-weight: 300;
+
+	span {
+		font-weight: 400;
+		font-family:'Raleway', 'Helvetica', sans-serif,
+	}
+}
+
 /* XX-Large */
 
 @include breakpoint('<=xxlarge') {
@@ -1723,6 +1737,7 @@ grid-template-columns: 1fr 1fr;
 	}
 
 	/* Experience */
+
 
 	.icons-container {
 		margin: 0 5%;
@@ -1739,7 +1754,6 @@ grid-template-columns: 1fr 1fr;
 	}
 
 	/* Projects */
-
 
 	.github-icon {
 		font-size: 90px;
@@ -1840,6 +1854,9 @@ grid-template-columns: 1fr 1fr;
 }
 
 
+
+
+
 @include breakpoint('<=large') {
 
 	/* Basic */
@@ -1864,6 +1881,29 @@ grid-template-columns: 1fr 1fr;
 
 	/* Projects */
 
+	.github-icon {
+		font-size: 40px;
+	}
+
+	.fa-link {
+		font-size: 40px;
+	}
+
+	.content-title {
+		font-size: 1em;
+	
+		
+	}
+	.content-text {
+		font-size: .8em;
+		line-height: 1.2em;
+
+	}
+
+	
+	.content-links {
+		font-size: .8em;
+	}
 
 
 }
@@ -2233,3 +2273,8 @@ grid-template-columns: 1fr 1fr;
 
 
 }
+
+// .content-text {
+// 	// font-weight: 400;
+// 	font-family: 'Open Sans', sans-serif;
+// }
