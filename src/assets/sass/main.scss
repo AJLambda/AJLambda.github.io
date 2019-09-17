@@ -1764,7 +1764,7 @@ grid-template-columns: 1fr 1fr;
 	}
 
 	.content-title {
-		font-size: 1.7em;
+		font-size: 1.4em;
 	}
 
 	.content-text {
@@ -1794,23 +1794,26 @@ grid-template-columns: 1fr 1fr;
 	/* Projects */
 
 	.github-icon {
-		font-size: 70px;
+		font-size: 50px;
 	}
 
 	.fa-link {
-		font-size: 70px;
+		font-size: 50px;
 	}
 
 	.content-title {
-		font-size: 1.7em;
-		font-weight: bold;
+		font-size: 1.1em;
 	}
 
 	.content-text {
-		font-size: 1em;
-		line-height: 1.5em;
+		font-size: .9em;
+		line-height: 1.3em;
+	
+		span {
+			color: _palette(lagoon);
+			font-size: 1.2em;
+		}
 	}
-
 	.icons-grid {
 		margin: 0 5%;
 	}
