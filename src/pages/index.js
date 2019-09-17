@@ -107,7 +107,7 @@ const IndexPage = () => (
                             <br />
                             <span>Full Stack Developer</span>
                             <br />
-                            react | redux | bootstrap | sass | node.js | express
+                            react | redux | bootstrap | sass | axios | node.js | express
                             | passport | google-api | filepond | cloudinary
                           </p>
                           <div className="content-links">
@@ -220,7 +220,7 @@ const IndexPage = () => (
                           <div className="content-links">
                             <Tooltip TransitionComponent={UiZoom} title="Code">
                               <a
-                                href="https://github.com/AJLambda/safespace"
+                                href="https://github.com/safespace-bw/frontend"
                                 target="_blank"
                                 rel="noopener noreferrer"
                               >
