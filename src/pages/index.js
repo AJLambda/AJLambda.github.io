@@ -167,7 +167,7 @@ const IndexPage = () => (
                           <div className="content-links">
                             <Tooltip TransitionComponent={UiZoom} title="Code">
                               <a
-                                href="https://github.com/CS20-BuildWeek-1/LambdaMUD-FrontEnd"
+                                href="https://github.com/CS20-BuildWeek-1"
                                 target="_blank"
                                 rel="noopener noreferrer"
                               >
