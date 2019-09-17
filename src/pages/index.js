@@ -21,7 +21,7 @@ import pythonimg from '../assets/images/python.png';
 import jsimg from '../assets/images/javascript.png';
 import austin from '../assets/images/austinjames.png';
 import riy from '../assets/images/reviewityourself.png';
-import safespace from '../assets/images/safespace.png';
+import safespace from '../assets/images/safespace11.png';
 import topnine from '../assets/images/topnine.png';
 import lambdafit from '../assets/images/lambdafit.png';
 import lambdamud from '../assets/images/lambdamud1.png';
@@ -108,7 +108,7 @@ const IndexPage = () => (
                             <span>Full Stack Developer</span>
                             <br />
                             react | redux | bootstrap | sass | node.js | express
-                            | passport | google-api | filepond
+                            | passport | google-api | filepond | cloudinary
                           </p>
                           <div className="content-links">
                             <Tooltip TransitionComponent={UiZoom} title="Code">
@@ -215,7 +215,7 @@ const IndexPage = () => (
                             <br />
                             <span>Front End Developer</span>
                             <br />
-                            react | redux | react-router | axios
+                            react | redux | react-router | axios | twilio
                           </p>
                           <div className="content-links">
                             <Tooltip TransitionComponent={UiZoom} title="Code">
