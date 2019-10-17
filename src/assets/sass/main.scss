@@ -21,8 +21,9 @@
 		large: (981px, 1680px),
 		medium: (737px, 980px),
 		small: (481px, 736px),
-		xsmall: (null, 480px),
-		xxsmall: (null, 370px)));
+		xsmall: (376px, 480px),
+		xxsmall: (321, 374px),
+		xxxsmall: (null, 320px)));
 
 // Mixins.
 
@@ -2001,6 +2002,7 @@ figure.effect-zoe:hover p.description {
 		line-height: 1.5em;
 	}
 
+
 	/* Experience */
 
 
@@ -2021,11 +2023,18 @@ figure.effect-zoe:hover p.description {
 	/* Projects */
 
 	.github-icon {
-		font-size: 90px;
+		font-size: 40px;
 	}
 
 	.fa-link {
-		font-size: 90px;
+		margin-top: 0px;
+		font-size: 40px;
+	}
+	
+
+	figure.effect-zoe p.description{
+		font-size: 25px !important;
+		bottom: 9em !important;
 	}
 
 	.content-title {
@@ -2059,11 +2068,17 @@ figure.effect-zoe:hover p.description {
 	/* Projects */
 
 	.github-icon {
-		font-size: 50px;
+		font-size: 30px;
 	}
 
 	.fa-link {
-		font-size: 50px;
+		font-size: 30px;
+	}
+
+
+	figure.effect-zoe p.description{
+		font-size: 20px !important;
+		bottom: 9em !important;
 	}
 
 	.content-title {
@@ -2104,6 +2119,12 @@ figure.effect-zoe:hover p.description {
 	.fa-link {
 		font-size: 25px;
 	}
+
+	figure.effect-zoe p.description{
+		font-size: 14px !important;
+		bottom: 8.3em !important;
+	}
+
 
 	.content-title {
 		font-size: 1.1em;
@@ -2156,6 +2177,11 @@ figure.effect-zoe:hover p.description {
 	.fa-link {
 		font-size: 25px;
 	}
+	// figure.effect-zoe p.description{
+	// 	font-size: 18px;
+	// 	bottom: 10em;
+	// }
+
 
 	.content-title {
 		font-size: 1em;
@@ -2265,6 +2291,8 @@ figure.effect-zoe:hover p.description {
 }
 
 /* Small */
+// small: (481px, 736px)
+
 
 @include breakpoint('<=small') {
 
@@ -2289,6 +2317,13 @@ figure.effect-zoe:hover p.description {
 		}
 
 
+	}
+
+	
+
+	figure.effect-zoe p.description{
+		font-size: 18px !important;
+		bottom: 5em !important;
 	}
 
 	/* Header */
@@ -2336,6 +2371,9 @@ figure.effect-zoe:hover p.description {
 }
 
 /* XSmall */
+
+// xsmall: (375, 480px)
+
 
 @include breakpoint('<=xsmall') {
 
@@ -2461,12 +2499,19 @@ figure.effect-zoe:hover p.description {
 	}
 
 	.github-icon {
-		font-size: 45px;
+		font-size: 20px;
 	}
 
 	.fa-link {
-		font-size: 45px;
+		font-size: 20px;
 	}
+	figure.effect-zoe p.description{
+		font-size: 14px !important;
+		bottom: 8em !important;
+	}
+
+
+	
 
 	.content-title {
 		font-size: 1em;
@@ -2510,18 +2555,25 @@ figure.effect-zoe:hover p.description {
 
 	/* XXsmall */
 
+	/* xxsmall: (321px, 374px))) */
+
 	@include breakpoint('<=xxsmall') {
 
 
 		/* Projects */
 
-		.github-icon {
-			font-size: 50px;
-		}
+		// .github-icon {
+		// 	font-size: 50px;
+		// }
 
-		.fa-link {
-			font-size: 50px;
+		// .fa-link {
+		// 	font-size: 50px;
+		// }
+		figure.effect-zoe p.description{
+			font-size: 16px !important;
+			bottom: 5em !important;
 		}
+	
 
 		.content-title {
 			font-size: 1em;
@@ -2539,6 +2591,26 @@ figure.effect-zoe:hover p.description {
 
 	}
 
+
+}
+
+@include breakpoint('<=xxxsmall') { 
+	.github-icon {
+			font-size: 20px;
+		}
+
+		.fa-link {
+			font-size: 20px;
+		}
+		figure.effect-zoe p.description{
+			font-size: 13px !important;
+			bottom: 5em !important;
+		}
+		figure.effect-zoe figcaption {
+			font-size: 12px;
+		}
+		
+	
 
 }
 

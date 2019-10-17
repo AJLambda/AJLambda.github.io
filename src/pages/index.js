@@ -157,6 +157,8 @@ const IndexPage = () => (
                       <p class="description">
                         Social web app where users can select their Top-Nine in
                         a variety of categories.
+                        <br />
+                        (Landing Page)
                       </p>
                     </figcaption>
                   </figure>
