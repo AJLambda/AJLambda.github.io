@@ -22,7 +22,7 @@ import jsimg from '../assets/images/javascript.png';
 import austin from '../assets/images/austinjames.png';
 import riy from '../assets/images/reviewityourself.png';
 import safespace from '../assets/images/safespace11.png';
-import topnine from '../assets/images/topnine.png';
+import topnine from '../assets/images/mytopnine.png';
 import lambdafit from '../assets/images/lambdafit.png';
 import lambdamud from '../assets/images/lambdamud1.png';
 
@@ -134,7 +134,7 @@ const IndexPage = () => (
                       <p class="icon-links">
                         <Tooltip TransitionComponent={UiZoom} title="URL">
                           <a
-                            href="https://review-it-yourself.com/"
+                            href="https://mytopnine.netlify.com"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
@@ -143,7 +143,7 @@ const IndexPage = () => (
                         </Tooltip>
                         <Tooltip TransitionComponent={UiZoom} title="Code">
                           <a
-                            href="https://github.com/labs13-how-to"
+                            href="https://github.com/AJLambda/MyTopNine"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
@@ -173,7 +173,7 @@ const IndexPage = () => (
                       <p class="icon-links">
                         <Tooltip TransitionComponent={UiZoom} title="URL">
                           <a
-                            href="https://review-it-yourself.com/"
+                            href="https://lambdamudd.netlify.com/"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
@@ -182,7 +182,7 @@ const IndexPage = () => (
                         </Tooltip>
                         <Tooltip TransitionComponent={UiZoom} title="Code">
                           <a
-                            href="https://github.com/labs13-how-to"
+                            href="https://github.com/CS20-BuildWeek-1"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
@@ -213,7 +213,7 @@ const IndexPage = () => (
                       <p class="icon-links">
                         <Tooltip TransitionComponent={UiZoom} title="URL">
                           <a
-                            href="https://review-it-yourself.com/"
+                            href="https://safespace-frontend.netlify.com/"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
@@ -222,7 +222,7 @@ const IndexPage = () => (
                         </Tooltip>
                         <Tooltip TransitionComponent={UiZoom} title="Code">
                           <a
-                            href="https://github.com/labs13-how-to"
+                            href="https://github.com/safespace-bw/frontend"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
