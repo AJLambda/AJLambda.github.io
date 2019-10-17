@@ -6,6 +6,7 @@
 @import 'libs/html-grid';
 @import url('font-awesome.min.css');
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,400italic,700,800");
+@import url('https://fonts.googleapis.com/css?family=Cabin&display=swap');
 
 /*
 	Highlights by HTML5 UP
@@ -284,7 +285,10 @@ i {
 
 p {
 	margin: 0 0 _size(element-margin) * 1.25 0;
+
+	
 }
+
 
 h1,
 h2,
@@ -1534,7 +1538,7 @@ figure.effect-zoe h2 {
 	float: left;
 }
 
-figure.effect-zoe p.icon-links a {
+figure.effect-zoe .icon-links a {
 	float: right;
 	color: #3c4a50;
 	font-size: 1em;
@@ -1545,8 +1549,8 @@ figure.effect-zoe p.icon-links a {
 
 }
 
-.white-box:hover p.icon-links a:hover,
-.white-box:hover p.icon-links a:focus {
+.white-box:hover .icon-links a:hover,
+.white-box:hover .icon-links a:focus {
 	color: #252d31;
 }
 
@@ -1564,14 +1568,14 @@ figure.effect-zoe p.description {
 }
 
 figure.effect-zoe h2,
-figure.effect-zoe p.icon-links a {
+figure.effect-zoe .icon-links a {
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 	-webkit-transform: translate3d(0,200%,0);
 	transform: translate3d(0,200%,0);
 }
 
-figure.effect-zoe p.icon-links a span::before {
+figure.effect-zoe .icon-links a span::before {
 	display: inline-block;
 	padding: 8px 10px;
 	font-family: 'feathericons';
@@ -1602,7 +1606,7 @@ figure.effect-zoe:hover p.description {
 
 .white-box:hover figcaption,
 .white-box:hover h2,
-.white-box:hover p.icon-links a {
+.white-box:hover .icon-links a {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
@@ -1612,17 +1616,17 @@ figure.effect-zoe:hover p.description {
 	transition-delay: 0.05s;
 }
 
-.white-box:hover p.icon-links a:nth-child(3) {
+.white-box:hover .icon-links a:nth-child(3) {
 	-webkit-transition-delay: 0.1s;
 	transition-delay: 0.1s;
 }
 
-.white-box:hover p.icon-links a:nth-child(2) {
+.white-box:hover .icon-links a:nth-child(2) {
 	-webkit-transition-delay: 0.15s;
 	transition-delay: 0.15s;
 }
 
-.white-box:hover p.icon-links a:first-child {
+.white-box:hover .icon-links a:first-child {
 	-webkit-transition-delay: 0.2s;
 	transition-delay: 0.2s;
 }

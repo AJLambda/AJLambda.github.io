@@ -23,7 +23,6 @@ import austin from '../assets/images/austinjames.png';
 import riy from '../assets/images/reviewityourself.png';
 import safespace from '../assets/images/safespace11.png';
 import topnine from '../assets/images/mytopnine.png';
-import lambdafit from '../assets/images/lambdafit.png';
 import lambdamud from '../assets/images/lambdamud1.png';
 
 const sections = [
@@ -84,164 +83,176 @@ const IndexPage = () => (
             </p>
 
             <div className="projects-container">
-              <div class="grid">
-                <div className="white-box">
-                  <figure class="effect-zoe">
-                    <img src={riy} alt="img25" />
-                    <figcaption>
-                      <h2>
-                        RI<span>Y</span>
-                      </h2>
-                      <p class="icon-links">
-                        <Tooltip TransitionComponent={UiZoom} title="URL">
-                          <a
-                            href="https://review-it-yourself.com/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <div className="fa fa-link fa-3x" />
-                          </a>
-                        </Tooltip>
-                        <Tooltip TransitionComponent={UiZoom} title="Code">
-                          <a
-                            href="https://github.com/labs13-how-to"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <FontAwesomeIcon
-                              icon={faGithub}
-                              className="github-icon"
-                            />
-                          </a>
-                        </Tooltip>
-                      </p>
-                      <p class="description">
-                        DIY web and iOS app where users can find, create, review
-                        and rate projects.
-                      </p>
-                    </figcaption>
-                  </figure>
-                </div>
+              <div className="grid">
+                <Fade>
+                  <div className="white-box">
+                    <figure className="effect-zoe">
+                      <img src={riy} alt="img25" />
+
+                      <figcaption>
+                        <h2>
+                          RI<span>Y</span>
+                        </h2>
+                        <div className="icon-links">
+                          <Tooltip TransitionComponent={UiZoom} title="URL">
+                            <a
+                              href="https://review-it-yourself.com/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <div className="fa fa-link fa-3x" />
+                            </a>
+                          </Tooltip>
+                          <Tooltip TransitionComponent={UiZoom} title="Code">
+                            <a
+                              href="https://github.com/labs13-how-to"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <FontAwesomeIcon
+                                icon={faGithub}
+                                className="github-icon"
+                              />
+                            </a>
+                          </Tooltip>
+                        </div>
+                        <p className="description">
+                          DIY web and iOS app where users can find, create,
+                          review and rate projects.
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </Fade>
               </div>
-              <div class="grid">
-                <div className="white-box">
-                  <figure class="effect-zoe">
-                    <img src={topnine} alt="img25" />
-                    <figcaption>
-                      <h2>
-                        My Top <span>Nine</span>
-                      </h2>
-                      <p class="icon-links">
-                        <Tooltip TransitionComponent={UiZoom} title="URL">
-                          <a
-                            href="https://mytopnine.netlify.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <div className="fa fa-link fa-3x" />
-                          </a>
-                        </Tooltip>
-                        <Tooltip TransitionComponent={UiZoom} title="Code">
-                          <a
-                            href="https://github.com/AJLambda/MyTopNine"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <FontAwesomeIcon
-                              icon={faGithub}
-                              className="github-icon"
-                            />
-                          </a>
-                        </Tooltip>
-                      </p>
-                      <p class="description">
-                        Social web app where users can select their Top-Nine in
-                        a variety of categories.
-                        <br />
-                        (Landing Page)
-                      </p>
-                    </figcaption>
-                  </figure>
-                </div>
+              <div className="grid">
+                <Fade>
+                  <div className="white-box">
+                    <figure className="effect-zoe">
+                      <img src={topnine} alt="img25" />
+
+                      <figcaption>
+                        <h2>
+                          My Top <span>Nine</span>
+                        </h2>
+                        <div className="icon-links">
+                          <Tooltip TransitionComponent={UiZoom} title="URL">
+                            <a
+                              href="https://mytopnine.netlify.com"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <div className="fa fa-link fa-3x" />
+                            </a>
+                          </Tooltip>
+                          <Tooltip TransitionComponent={UiZoom} title="Code">
+                            <a
+                              href="https://github.com/AJLambda/MyTopNine"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <FontAwesomeIcon
+                                icon={faGithub}
+                                className="github-icon"
+                              />
+                            </a>
+                          </Tooltip>
+                        </div>
+                        <p className="description">
+                          Social web app where users can select their Top-Nine
+                          in a variety of categories.
+                          <br />
+                          (Landing Page)
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </Fade>
               </div>
-              <div class="grid">
-                <div className="white-box">
-                  <figure class="effect-zoe">
-                    <img src={lambdamud} alt="img25" />
-                    <figcaption>
-                      <h2>
-                        Lambda <span>Mudd</span>
-                      </h2>
-                      <p class="icon-links">
-                        <Tooltip TransitionComponent={UiZoom} title="URL">
-                          <a
-                            href="https://lambdamudd.netlify.com/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <div className="fa fa-link fa-3x" />
-                          </a>
-                        </Tooltip>
-                        <Tooltip TransitionComponent={UiZoom} title="Code">
-                          <a
-                            href="https://github.com/CS20-BuildWeek-1"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <FontAwesomeIcon
-                              icon={faGithub}
-                              className="github-icon"
-                            />
-                          </a>
-                        </Tooltip>
-                      </p>
-                      <p class="description">
-                        Multi-User-Dungeon web app game with a custom made map,
-                        room chat, and retro Fx.
-                      </p>
-                    </figcaption>
-                  </figure>
-                </div>
+              <div className="grid">
+                <Fade>
+                  <div className="white-box">
+                    <figure className="effect-zoe">
+                      <img src={lambdamud} alt="img25" />
+
+                      <figcaption>
+                        <h2>
+                          Lambda <span>Mudd</span>
+                        </h2>
+                        <div className="icon-links">
+                          <Tooltip TransitionComponent={UiZoom} title="URL">
+                            <a
+                              href="https://lambdamudd.netlify.com/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <div className="fa fa-link fa-3x" />
+                            </a>
+                          </Tooltip>
+                          <Tooltip TransitionComponent={UiZoom} title="Code">
+                            <a
+                              href="https://github.com/CS20-BuildWeek-1"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <FontAwesomeIcon
+                                icon={faGithub}
+                                className="github-icon"
+                              />
+                            </a>
+                          </Tooltip>
+                        </div>
+                        <p className="description">
+                          Multi-User-Dungeon web app game with a custom made
+                          map, room chat, and retro Fx.
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </Fade>
               </div>
 
-              <div class="grid">
-                <div className="white-box">
-                  <figure class="effect-zoe">
-                    <img src={safespace} alt="img25" />
-                    <figcaption>
-                      <h2>
-                        Safe <span>Space</span>
-                      </h2>
-                      <p class="icon-links">
-                        <Tooltip TransitionComponent={UiZoom} title="URL">
-                          <a
-                            href="https://safespace-frontend.netlify.com/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <div className="fa fa-link fa-3x" />
-                          </a>
-                        </Tooltip>
-                        <Tooltip TransitionComponent={UiZoom} title="Code">
-                          <a
-                            href="https://github.com/safespace-bw/frontend"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <FontAwesomeIcon
-                              icon={faGithub}
-                              className="github-icon"
-                            />
-                          </a>
-                        </Tooltip>
-                      </p>
-                      <p class="description">
-                        Self-care web app designed to send positive text
-                        reminders throughout the day.
-                      </p>
-                    </figcaption>
-                  </figure>
-                </div>
+              <div className="grid">
+                <Fade>
+                  <div className="white-box">
+                    <figure className="effect-zoe">
+                      <img src={safespace} alt="img25" />
+
+                      <figcaption>
+                        <h2>
+                          Safe <span>Space</span>
+                        </h2>
+                        <div className="icon-links">
+                          <Tooltip TransitionComponent={UiZoom} title="URL">
+                            <a
+                              href="https://safespace-frontend.netlify.com/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <div className="fa fa-link fa-3x" />
+                            </a>
+                          </Tooltip>
+                          <Tooltip TransitionComponent={UiZoom} title="Code">
+                            <a
+                              href="https://github.com/safespace-bw/frontend"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <FontAwesomeIcon
+                                icon={faGithub}
+                                className="github-icon"
+                              />
+                            </a>
+                          </Tooltip>
+                        </div>
+                        <p className="description">
+                          Self-care web app designed to send positive text
+                          reminders throughout the day.
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </Fade>
               </div>
             </div>
           </div>
