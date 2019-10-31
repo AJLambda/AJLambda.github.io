@@ -21,7 +21,7 @@ import pythonimg from '../assets/images/python.png';
 import jsimg from '../assets/images/javascript.png';
 import austin from '../assets/images/austinjames.png';
 import riy from '../assets/images/reviewityourself.png';
-import safespace from '../assets/images/safespace11.png';
+import safespace from '../assets/images/safespace.png';
 import topnine from '../assets/images/mytopnine.png';
 import lambdamud from '../assets/images/lambdamud1.png';
 
@@ -129,6 +129,48 @@ const IndexPage = () => (
                 <Fade>
                   <div className="white-box">
                     <figure className="effect-zoe">
+                      <img src={safespace} alt="img25" />
+
+                      <figcaption>
+                        <h2>
+                          Safe <span>Space</span>
+                        </h2>
+                        <div className="icon-links">
+                          <Tooltip TransitionComponent={UiZoom} title="URL">
+                            <a
+                              href="https://safespace-landing.netlify.com/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <div className="fa fa-link fa-3x" />
+                            </a>
+                          </Tooltip>
+                          <Tooltip TransitionComponent={UiZoom} title="Code">
+                            <a
+                              href="https://github.com/AJLambda/Safespace-landing"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <FontAwesomeIcon
+                                icon={faGithub}
+                                className="github-icon"
+                              />
+                            </a>
+                          </Tooltip>
+                        </div>
+                        <p className="description">
+                          Self-care web app designed to send positive text
+                          reminders throughout the day.
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </Fade>
+              </div>
+              <div className="grid">
+                <Fade>
+                  <div className="white-box">
+                    <figure className="effect-zoe">
                       <img src={topnine} alt="img25" />
 
                       <figcaption>
@@ -205,49 +247,6 @@ const IndexPage = () => (
                         <p className="description">
                           Multi-User-Dungeon web app game with a custom made
                           map, room chat, and retro Fx.
-                        </p>
-                      </figcaption>
-                    </figure>
-                  </div>
-                </Fade>
-              </div>
-
-              <div className="grid">
-                <Fade>
-                  <div className="white-box">
-                    <figure className="effect-zoe">
-                      <img src={safespace} alt="img25" />
-
-                      <figcaption>
-                        <h2>
-                          Safe <span>Space</span>
-                        </h2>
-                        <div className="icon-links">
-                          <Tooltip TransitionComponent={UiZoom} title="URL">
-                            <a
-                              href="https://safespace-frontend.netlify.com/"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <div className="fa fa-link fa-3x" />
-                            </a>
-                          </Tooltip>
-                          <Tooltip TransitionComponent={UiZoom} title="Code">
-                            <a
-                              href="https://github.com/safespace-bw/frontend"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <FontAwesomeIcon
-                                icon={faGithub}
-                                className="github-icon"
-                              />
-                            </a>
-                          </Tooltip>
-                        </div>
-                        <p className="description">
-                          Self-care web app designed to send positive text
-                          reminders throughout the day.
                         </p>
                       </figcaption>
                     </figure>
