@@ -1423,6 +1423,13 @@ button,
 	list-style: none;
 	text-align: center;
 	width: 100%;
+
+	.mobile-project-card {
+		display: none;
+	}
+
+
+	
 }
 
 .white-box {
@@ -2175,6 +2182,7 @@ figure.effect-zoe:hover p.description {
 // xsmall: (375, 480px)
 
 
+
 @include breakpoint('<=xsmall') {
 
 	$size-padding-tb: 3em;
@@ -2311,7 +2319,81 @@ figure.effect-zoe:hover p.description {
 	}
 
 
-	
+		.mobile-project-card {
+			background: white;
+			display: block;
+			margin: 20px auto;
+			width: 98%;
+			// height:500px;
+			border: 1px solid lightgrey;
+			border-radius: 5px;
+
+			#riy {
+				background: url("../images/reviewityourself.png");
+				background-size: 100%;
+				background-repeat: no-repeat;
+			}
+
+			#safespace {
+				background: url("../images/safespace.png");
+				background-size: 100%;
+				background-repeat: no-repeat;
+			}
+
+			#mytopnine {
+				background: url("../images/mytopnine.png");
+				background-size: 100%;
+				background-repeat: no-repeat;
+			}
+			
+			#lambdamud {
+				background: url("../images/lambdamud1.png");
+				background-size: 100%;
+				background-repeat: no-repeat;
+			}
+
+			
+
+			.mobile-project-img {
+				border-top-right-radius: 5px;
+				border-top-left-radius: 5px;
+				// margin: 10px ;
+				height:180px;
+				// width:80%;
+				
+				background-size: 100%;
+				background-repeat: no-repeat;
+				
+			}
+
+
+			.mobile-project-info {
+				.fa {
+					font-size: 40px;
+					color: #3c4a50;
+				}
+
+				.github-icon-mobile {
+					font-size: 40px;
+					margin-right: 20px;
+					color: #3c4a50;
+				}
+
+				h3 {
+					font-size:18px;
+					color:_palette(sea);
+				}
+				padding: 20px;
+				// border-top :1px solid lightgrey;
+			}
+		}
+
+	.grid {
+		.white-box {
+			display: none;
+		}
+	}
+
 
 	.content-title {
 		font-size: 1em;
@@ -2409,10 +2491,10 @@ figure.effect-zoe:hover p.description {
 		figure.effect-zoe figcaption {
 			font-size: 12px;
 		}
-		
-	
 
 }
+
+
 
 // .content-text {
 // 	// font-weight: 400;
