@@ -18,9 +18,9 @@ module.exports = {
       url: 'https://github.com/AJLambda',
     },
     {
-      icon: 'fa-twitter',
-      name: 'Twitter',
-      url: 'https://twitter.com/IAustinJames',
+      icon: 'fa-linkedin',
+      name: 'Linkedin',
+      url: 'https://www.linkedin.com/in/austinpjames/',
     },
     {
       icon: 'fa-facebook',
@@ -28,14 +28,15 @@ module.exports = {
       url: 'https://www.facebook.com/IAustinJames',
     },
     {
+      icon: 'fa-twitter',
+      name: 'Twitter',
+      url: 'https://twitter.com/IAustinJames',
+    },
+
+    {
       icon: 'fa-envelope-o',
       name: 'Email',
       url: 'mailto:apj2277@gmail.com',
-    },
-    {
-      icon: 'fa-phone',
-      name: 'Phone',
-      url: 'tel:9498423646',
     },
   ],
 };
