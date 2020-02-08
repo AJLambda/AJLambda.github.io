@@ -21,6 +21,7 @@ import pythonimg from '../assets/images/python.png';
 import jsimg from '../assets/images/javascript.png';
 import austin from '../assets/images/austinjames.png';
 import riy from '../assets/images/reviewityourself.png';
+import molokai from '../assets/images/molokairentals.png'
 import safespace from '../assets/images/safespace.png';
 import topnine from '../assets/images/mytopnine.png';
 import lambdamud from '../assets/images/lambdamud1.png';
@@ -83,6 +84,83 @@ const IndexPage = () => (
             </p>
 
             <div className="projects-container">
+              <div className="grid">
+                <Fade>
+                  <div className="white-box">
+                    <a
+                      href="https://www.molokaicondorentals.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-anchor"
+                    >
+                      <figure className="effect-zoe">
+                        <img src={molokai} alt="img25" />
+
+                        <figcaption>
+                          <h2>
+                            Condo<span>Rentals</span>
+                          </h2>
+                          <div className="icon-links">
+                            <Tooltip TransitionComponent={UiZoom} title="URL">
+                              <a
+                                href="https://molokaicondorentals.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                <div className="fa fa-link fa-3x" />
+                              </a>
+                            </Tooltip>
+                            {/* <Tooltip TransitionComponent={UiZoom} title="Code">
+                              <a
+                                href="https://github.com/labs13-how-to"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                <FontAwesomeIcon
+                                  icon={faGithub}
+                                  className="github-icon"
+                                />
+                              </a>
+                            </Tooltip> */}
+                          </div>
+                          <p className="description">
+                            A vacation property rental website I am developing for a client. Built using Wordpress.
+                          </p>
+                        </figcaption>
+                      </figure>
+                    </a>
+                  </div>
+                </Fade>
+              </div>
+
+              {/* Mobile Project */}
+              <div className="mobile-project-card">
+                <div className="mobile-project-img" id="molokai"></div>
+                <div className="mobile-project-info">
+                  <h3>Molokai Condo Rentals</h3>
+                  <p>
+                  A vacation property rental website I am developing for a client. Built using Wordpress.
+                  </p>
+                  {/* <a
+                    href="https://github.com/labs13-how-to"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon
+                      icon={faGithub}
+                      className="github-icon-mobile"
+                    />
+                  </a> */}
+                  <a
+                    href="https://molokaicondorentals.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="fa fa-link fa-3x" />
+                  </a>
+                </div>
+              </div>
+
               <div className="grid">
                 <Fade>
                   <div className="white-box">
