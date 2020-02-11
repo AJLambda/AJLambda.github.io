@@ -36,7 +36,9 @@ const IndexPage = () => (
   <>
     <Layout>
       <Header id="header"></Header>
+
       <section id="main">
+        <div className="sticky"></div>
         {/* <div className="video-container"></div> */}
 
         <section id="one" className="main special">
@@ -50,9 +52,9 @@ const IndexPage = () => (
               </header>
 
               <p>
-                Hi! I am Austin James, a Full-Stack Web Developer living in
-                Orange County, California. I combine design and code to create
-                websites and applications that are interactive, responsive, and
+                Hi! I am Austin James, a Full-Stack Web Developer from Orange
+                County, California. I combine design and code to create websites
+                and applications that are interactive, responsive, and
                 performant. It is my passion to bring ideas to life.
               </p>
             </div>

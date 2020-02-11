@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactPlayer from 'react-player';
+// import ReactPlayer from 'react-player';
 import { Waypoint } from 'react-waypoint';
 import Scroll from './Scroll';
 import Fade from 'react-reveal/Fade';
