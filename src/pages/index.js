@@ -38,7 +38,7 @@ const IndexPage = () => (
       <Header id="header"></Header>
 
       <section id="main">
-        <div className="sticky"></div>
+        {/* <div className="sticky"></div> */}
         {/* <div className="video-container"></div> */}
 
         <section id="one" className="main special">
