@@ -32,31 +32,31 @@ class Header extends Component {
   render() {
     return (
       <section id="header">
+        <video id="myVideo" className="austin-clouds" loop autoPlay muted>
+          <source src={cloudsaustin} type="video/mp4"></source>
+        </video>
         <Waypoint
           onEnter={this.handleWaypointEnter}
           onLeave={this.handleWaypointLeave}
         >
-          <video id="myVideo" className="austin-clouds" loop autoPlay muted>
-            <source src={cloudsaustin} type="video/mp4"></source>
-          </video>
+          <header className="major">
+            <Fade top duration={1500}>
+              <h1>{config.heading}</h1>
+              <p>{config.subHeading}</p>
+              <section id="section07" className="demo">
+                <Scroll type="id" element="one">
+                  <div className="arw-bkg">
+                    <a href="#one">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </a>
+                  </div>
+                </Scroll>
+              </section>
+            </Fade>
+          </header>
         </Waypoint>
-        <header className="major">
-          <Fade top duration={1500}>
-            <h1>{config.heading}</h1>
-            <p>{config.subHeading}</p>
-            <section id="section07" className="demo">
-              <Scroll type="id" element="one">
-                <div className="arw-bkg">
-                  <a href="#one">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </a>
-                </div>
-              </Scroll>
-            </section>
-          </Fade>
-        </header>
       </section>
     );
   }
