@@ -316,17 +316,17 @@ html {
   z-index: -100;
 
   // height: inherit;
-  &:before {
-    background: url('../images/overlay.png');
-    content: '';
-    display: block;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 2;
-  }
+  //   &:before {
+  //     background: url('../images/overlay.png');
+  //     content: '';
+  //     display: block;
+  //     height: 100%;
+  //     left: 0;
+  //     position: absolute;
+  //     top: 0;
+  //     width: 100%;
+  //     z-index: 2;
+  //   }
 }
 
 #austin-lake {
@@ -2179,18 +2179,6 @@ figure.effect-zoe:hover p.description {
 
     .container {
       // height: 100vh;
-    }
-
-    &:before {
-      background: url('../images/overlay.png');
-      content: '';
-      display: block;
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 100%;
-      z-index: 2;
     }
   }
 

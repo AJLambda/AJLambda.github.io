@@ -5,7 +5,7 @@ import Scroll from './Scroll';
 import Fade from 'react-reveal/Fade';
 import config from '../../config';
 import cloudsaustin from '../assets/images/cloudsaustin.mp4';
-// import austinlake from '../assets/images/austinlake3.mp4';
+import austinlake from '../assets/images/austinlake3.mp4';
 
 class Header extends Component {
   constructor(props) {
@@ -34,6 +34,16 @@ class Header extends Component {
       <section id="header">
         <video id="myVideo" className="austin-clouds" loop autoPlay muted>
           <source src={cloudsaustin} type="video/mp4"></source>
+        </video>
+        <video
+          id="myVideo"
+          className="austin-clouds"
+          id="austin-lake"
+          loop
+          autoPlay
+          muted
+        >
+          <source src={austinlake} type="video/mp4"></source>
         </video>
         <Waypoint
           onEnter={this.handleWaypointEnter}
