@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import ReactPlayer from 'react-player';
 import { Waypoint } from 'react-waypoint';
-import { withStyles, makeStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
 import Scroll from './Scroll';
 import Fade from 'react-reveal/Fade';
 import config from '../../config';
@@ -10,13 +10,13 @@ import austinlake from '../assets/images/austinlake3.mp4';
 import UiZoom from '@material-ui/core/Zoom';
 import Tooltip from '@material-ui/core/Tooltip';
 
-const DarkTooltip = withStyles(theme => ({
+const LightToolTip = withStyles(theme => ({
   tooltip: {
-    // backgroundColor: theme.palette.common.black,
+    // backgroundColor: theme.palette.common.white,
     // color: 'rgba(0, 0, 0, 0.87)',
     boxShadow: theme.shadows[1],
     fontSize: 11,
-    // marginLeft: '30px',
+    marginLeft: '30px',
   },
 }))(Tooltip);
 
@@ -48,14 +48,7 @@ class Header extends Component {
         <video id="myVideo" className="austin-clouds" loop autoPlay muted>
           <source src={cloudsaustin} type="video/mp4"></source>
         </video>
-        <video
-          id="myVideo"
-          className="austin-clouds"
-          id="austin-lake"
-          loop
-          autoPlay
-          muted
-        >
+        <video className="austin-clouds" id="austin-lake" loop autoPlay muted>
           <source src={austinlake} type="video/mp4"></source>
         </video>
         <Waypoint
@@ -63,16 +56,16 @@ class Header extends Component {
           onLeave={this.handleWaypointLeave}
         >
           <header className="major">
-            <Fade top duration={1500}>
+            <Fade left delay={1500}>
               <ul className="icons">
                 {config.socialLinks.map(social => {
                   const { icon, name, url } = social;
                   return (
                     <li key={url}>
-                      <DarkTooltip
+                      <LightToolTip
                         TransitionComponent={UiZoom}
                         title={name}
-                        // placement="right"
+                        placement="right"
                         arrow
                       >
                         <a
@@ -83,11 +76,13 @@ class Header extends Component {
                         >
                           <span className="label">{name}</span>
                         </a>
-                      </DarkTooltip>
+                      </LightToolTip>
                     </li>
                   );
                 })}
               </ul>
+            </Fade>
+            <Fade top duration={1500}>
               <h1>{config.heading}</h1>
               <p>{config.subHeading}</p>
               <section id="section07" className="demo">

@@ -25,6 +25,17 @@ import molokai from '../assets/images/molokairentals.png';
 import safespace from '../assets/images/safespace.png';
 import topnine from '../assets/images/mytopnine.png';
 import lambdamud from '../assets/images/lambdamud1.png';
+import { withStyles } from '@material-ui/core/styles';
+
+const LightToolTip = withStyles(theme => ({
+  tooltip: {
+    // backgroundColor: theme.palette.common.white,
+    // color: 'rgba(0, 0, 0, 0.87)',
+    boxShadow: theme.shadows[1],
+    fontSize: 11,
+    marginBottom: '10px',
+  },
+}))(Tooltip);
 
 const sections = [
   // { id: 'main', bg: require('../assets/images/rocks.jpg') },
@@ -105,7 +116,11 @@ const IndexPage = () => (
                               Condo<span>Rentals</span>
                             </h2>
                             <div className="icon-links">
-                              <Tooltip TransitionComponent={UiZoom} title="URL">
+                              <LightToolTip
+                                TransitionComponent={UiZoom}
+                                title="URL"
+                                arrow
+                              >
                                 <a
                                   href="https://molokaicondorentals.com/"
                                   target="_blank"
@@ -113,8 +128,8 @@ const IndexPage = () => (
                                 >
                                   <div className="fa fa-link fa-3x" />
                                 </a>
-                              </Tooltip>
-                              {/* <Tooltip TransitionComponent={UiZoom} title="Code">
+                              </LightToolTip>
+                              {/* <ToolTip TransitionComponent={UiZoom} title="Code">
                               <a
                                 href="https://github.com/labs13-how-to"
                                 target="_blank"
@@ -125,7 +140,7 @@ const IndexPage = () => (
                                   className="github-icon"
                                 />
                               </a>
-                            </Tooltip> */}
+                            </ToolTip> */}
                             </div>
                             <p className="description">
                               A vacation property rental website I am developing
@@ -184,7 +199,11 @@ const IndexPage = () => (
                               RI<span>Y</span>
                             </h2>
                             <div className="icon-links">
-                              <Tooltip TransitionComponent={UiZoom} title="URL">
+                              <LightToolTip
+                                TransitionComponent={UiZoom}
+                                title="URL"
+                                arrow
+                              >
                                 <a
                                   href="https://review-it-yourself.com/"
                                   target="_blank"
@@ -192,10 +211,11 @@ const IndexPage = () => (
                                 >
                                   <div className="fa fa-link fa-3x" />
                                 </a>
-                              </Tooltip>
-                              <Tooltip
+                              </LightToolTip>
+                              <LightToolTip
                                 TransitionComponent={UiZoom}
                                 title="Code"
+                                arrow
                               >
                                 <a
                                   href="https://github.com/labs13-how-to"
@@ -207,7 +227,7 @@ const IndexPage = () => (
                                     className="github-icon"
                                   />
                                 </a>
-                              </Tooltip>
+                              </LightToolTip>
                             </div>
                             <p className="description">
                               DIY web and iOS app where users can find, create,
@@ -265,7 +285,11 @@ const IndexPage = () => (
                               Safe <span>Space</span>
                             </h2>
                             <div className="icon-links">
-                              <Tooltip TransitionComponent={UiZoom} title="URL">
+                              <LightToolTip
+                                TransitionComponent={UiZoom}
+                                title="URL"
+                                arrow
+                              >
                                 <a
                                   href="https://safespace-landing.netlify.com/"
                                   target="_blank"
@@ -273,10 +297,11 @@ const IndexPage = () => (
                                 >
                                   <div className="fa fa-link fa-3x" />
                                 </a>
-                              </Tooltip>
-                              <Tooltip
+                              </LightToolTip>
+                              <LightToolTip
                                 TransitionComponent={UiZoom}
                                 title="Code"
+                                arrow
                               >
                                 <a
                                   href="https://github.com/AJLambda/Safespace-landing"
@@ -288,7 +313,7 @@ const IndexPage = () => (
                                     className="github-icon"
                                   />
                                 </a>
-                              </Tooltip>
+                              </LightToolTip>
                             </div>
                             <p className="description">
                               Self-care web app designed to send positive text
@@ -346,7 +371,11 @@ const IndexPage = () => (
                               My Top <span>Nine</span>
                             </h2>
                             <div className="icon-links">
-                              <Tooltip TransitionComponent={UiZoom} title="URL">
+                              <LightToolTip
+                                TransitionComponent={UiZoom}
+                                title="URL"
+                                arrow
+                              >
                                 <a
                                   href="https://mytopnine.netlify.com"
                                   target="_blank"
@@ -354,10 +383,11 @@ const IndexPage = () => (
                                 >
                                   <div className="fa fa-link fa-3x" />
                                 </a>
-                              </Tooltip>
-                              <Tooltip
+                              </LightToolTip>
+                              <LightToolTip
                                 TransitionComponent={UiZoom}
                                 title="Code"
+                                arrow
                               >
                                 <a
                                   href="https://github.com/AJLambda/MyTopNine"
@@ -369,7 +399,7 @@ const IndexPage = () => (
                                     className="github-icon"
                                   />
                                 </a>
-                              </Tooltip>
+                              </LightToolTip>
                             </div>
                             <p className="description">
                               Social web app where users can select their
@@ -431,7 +461,11 @@ const IndexPage = () => (
                               Lambda <span>Mudd</span>
                             </h2>
                             <div className="icon-links">
-                              <Tooltip TransitionComponent={UiZoom} title="URL">
+                              <LightToolTip
+                                TransitionComponent={UiZoom}
+                                title="URL"
+                                arrow
+                              >
                                 <a
                                   href="https://lambdamudd.netlify.com/"
                                   target="_blank"
@@ -439,10 +473,11 @@ const IndexPage = () => (
                                 >
                                   <div className="fa fa-link fa-3x" />
                                 </a>
-                              </Tooltip>
-                              <Tooltip
+                              </LightToolTip>
+                              <LightToolTip
                                 TransitionComponent={UiZoom}
                                 title="Code"
+                                arrow
                               >
                                 <a
                                   href="https://github.com/CS20-BuildWeek-1"
@@ -454,7 +489,7 @@ const IndexPage = () => (
                                     className="github-icon"
                                   />
                                 </a>
-                              </Tooltip>
+                              </LightToolTip>
                             </div>
                             <p className="description">
                               Multi-User-Dungeon web app game with a custom made

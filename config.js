@@ -27,11 +27,11 @@ module.exports = {
       name: 'Facebook',
       url: 'https://www.facebook.com/IAustinJames',
     },
-    {
-      icon: 'fa-twitter',
-      name: 'Twitter',
-      url: 'https://twitter.com/IAustinJames',
-    },
+    // {
+    //   icon: 'fa-twitter',
+    //   name: 'Twitter',
+    //   url: 'https://twitter.com/IAustinJames',
+    // },
 
     {
       icon: 'fa-envelope',
