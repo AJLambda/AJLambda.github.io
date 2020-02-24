@@ -34,9 +34,15 @@ module.exports = {
     },
 
     {
-      icon: 'fa-envelope-o',
+      icon: 'fa-envelope',
       name: 'Email',
       url: 'mailto:apj2277@gmail.com',
+    },
+    {
+      icon: 'fa-file',
+      name: 'Resume',
+      url:
+        'https://drive.google.com/file/d/14XxiDdkJsrxAQizTox7fM4Y8WrP8CRpR/view?usp=sharing',
     },
   ],
 };
