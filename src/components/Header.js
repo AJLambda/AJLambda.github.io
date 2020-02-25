@@ -45,11 +45,11 @@ class Header extends Component {
   render() {
     return (
       <section id="header">
-        <Fade delay={500} duration={1000}>
-          <video id="myVideo" className="austin-clouds" loop autoPlay muted>
-            <source src={cloudsaustin} type="video/mp4"></source>
-          </video>
-        </Fade>
+        {/* <Fade delay={500} duration={1000}> */}
+        <video id="myVideo" className="austin-clouds" loop autoPlay muted>
+          <source src={cloudsaustin} type="video/mp4"></source>
+        </video>
+        {/* </Fade> */}
         <video className="austin-clouds" id="austin-lake" loop autoPlay muted>
           <source src={austinlake} type="video/mp4"></source>
         </video>
@@ -59,47 +59,47 @@ class Header extends Component {
           onLeave={this.handleWaypointLeave}
         >
           <header className="major">
-            <Fade left delay={2000}>
-              <ul className="icons">
-                {config.socialLinks.map(social => {
-                  const { icon, name, url } = social;
-                  return (
-                    <li key={url}>
-                      <LightToolTip
-                        TransitionComponent={UiZoom}
-                        title={name}
-                        placement="right"
-                        arrow
+            {/* <Fade left delay={2000}> */}
+            <ul className="icons">
+              {config.socialLinks.map(social => {
+                const { icon, name, url } = social;
+                return (
+                  <li key={url}>
+                    <LightToolTip
+                      TransitionComponent={UiZoom}
+                      title={name}
+                      placement="right"
+                      arrow
+                    >
+                      <a
+                        href={url}
+                        className={`icon alt ${icon}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
-                        <a
-                          href={url}
-                          className={`icon alt ${icon}`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <span className="label">{name}</span>
-                        </a>
-                      </LightToolTip>
-                    </li>
-                  );
-                })}
-              </ul>
-            </Fade>
-            <Fade delay={500}>
-              <h1>{config.heading}</h1>
-              <p>{config.subHeading}</p>
-              <section id="section07" className="demo">
-                <Scroll type="id" element="one">
-                  <div className="arw-bkg">
-                    <a href="#one">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </a>
-                  </div>
-                </Scroll>
-              </section>
-            </Fade>
+                        <span className="label">{name}</span>
+                      </a>
+                    </LightToolTip>
+                  </li>
+                );
+              })}
+            </ul>
+            {/* </Fade> */}
+            {/* <Fade delay={500}> */}
+            <h1>{config.heading}</h1>
+            <p>{config.subHeading}</p>
+            <section id="section07" className="demo">
+              <Scroll type="id" element="one">
+                <div className="arw-bkg">
+                  <a href="#one">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </a>
+                </div>
+              </Scroll>
+            </section>
+            {/* </Fade> */}
           </header>
         </Waypoint>
       </section>
