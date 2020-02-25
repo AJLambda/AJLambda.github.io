@@ -34,12 +34,12 @@ module.exports = {
     // },
 
     {
-      icon: 'fa-envelope',
+      icon: 'fa-envelope-o',
       name: 'Email',
       url: 'mailto:apj2277@gmail.com',
     },
     {
-      icon: 'fa-file',
+      icon: 'fa-file-pdf-o',
       name: 'Resume',
       url:
         'https://drive.google.com/file/d/14XxiDdkJsrxAQizTox7fM4Y8WrP8CRpR/view?usp=sharing',

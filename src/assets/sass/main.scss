@@ -2309,6 +2309,33 @@ figure.effect-zoe:hover p.description {
   $size-padding-tb: 3em;
   $size-padding-lr: 1em;
 
+  //header
+  .major ul.icons {
+    display: none;
+  }
+
+  //footer
+  ul.icons {
+    cursor: default;
+    font-size: 16px;
+    // color: white;
+    /* height: 50%; */
+    list-style: none;
+    background: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px;
+    position: relative;
+    top: 0;
+    /* top: 0; */
+    // left: 0;
+    /* height: 50%; */
+    z-index: 200;
+    width: 100%;
+  }
+
   html {
     // background-attachment: fixed;
     // background-position: center;

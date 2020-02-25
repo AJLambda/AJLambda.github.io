@@ -4,7 +4,7 @@ import config from '../../config';
 export default function Footer() {
   return (
     <footer>
-      {/* <ul className="icons">
+      <ul className="icons">
         {config.socialLinks.map(social => {
           const { icon, name, url } = social;
           return (
@@ -15,12 +15,13 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
+                {/* <div>{name}</div> */}
                 <span className="label">{name}</span>
               </a>
             </li>
           );
         })}
-      </ul> */}
+      </ul>
       {/* <ul className="copyright">
         <li>&copy; Highlights</li>
         <li>
