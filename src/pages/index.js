@@ -3,7 +3,6 @@ import Tooltip from '@material-ui/core/Tooltip';
 import Scrollspy from 'react-scrollspy';
 import UiZoom from '@material-ui/core/Fade';
 import Fade from 'react-reveal/Fade';
-import Zoom from 'react-reveal/Zoom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import Layout from '../components/Layout';
@@ -56,9 +55,8 @@ const IndexPage = () => (
           <div className="container">
             <div className="content">
               <header className="major">
-                <Zoom>
-                  <img className="profile-img" src={austin} alt="Austin" />
-                </Zoom>
+                <img className="profile-img" src={austin} alt="Austin" />
+
                 <h2>About Me</h2>
               </header>
 
@@ -561,37 +559,37 @@ const IndexPage = () => (
               </p>
 
               <div className="icons-container">
-                <Zoom big cascade>
-                  <div className="icons-grid">
-                    <div className="icons-wrapper">
-                      <img src={htmlimg} alt="html5" className="icons-img" />
-                    </div>
-                    <div className="icons-wrapper">
-                      <img src={cssimg} alt="css" className="icons-img" />
-                    </div>
-                    <div className="icons-wrapper">
-                      <img src={jsimg} alt="css" className="icons-img" />
-                    </div>
-                    <div className="icons-wrapper">
-                      <img src={nodeimg} alt="js" className="icons-img" />
-                    </div>
-                    <div className="icons-wrapper">
-                      <img src={reactimg} alt="nodejs" className="icons-img" />
-                    </div>
-                    <div className="icons-wrapper">
-                      <img src={reduximg} alt="nodejs" className="icons-img" />
-                    </div>
-                    <div className="icons-wrapper">
-                      <img src={pythonimg} alt="nodejs" className="icons-img" />
-                    </div>
-                    <div className="icons-wrapper">
-                      <img src={sqlimg} alt="nodejs" className="icons-img" />
-                    </div>
-                    <div className="icons-wrapper">
-                      <img src={gitimg} alt="nodejs" className="icons-img" />
-                    </div>
+                {/* <Zoom big cascade> */}
+                <div className="icons-grid">
+                  <div className="icons-wrapper">
+                    <img src={htmlimg} alt="html5" className="icons-img" />
                   </div>
-                </Zoom>
+                  <div className="icons-wrapper">
+                    <img src={cssimg} alt="css" className="icons-img" />
+                  </div>
+                  <div className="icons-wrapper">
+                    <img src={jsimg} alt="css" className="icons-img" />
+                  </div>
+                  <div className="icons-wrapper">
+                    <img src={nodeimg} alt="js" className="icons-img" />
+                  </div>
+                  <div className="icons-wrapper">
+                    <img src={reactimg} alt="nodejs" className="icons-img" />
+                  </div>
+                  <div className="icons-wrapper">
+                    <img src={reduximg} alt="nodejs" className="icons-img" />
+                  </div>
+                  <div className="icons-wrapper">
+                    <img src={pythonimg} alt="nodejs" className="icons-img" />
+                  </div>
+                  <div className="icons-wrapper">
+                    <img src={sqlimg} alt="nodejs" className="icons-img" />
+                  </div>
+                  <div className="icons-wrapper">
+                    <img src={gitimg} alt="nodejs" className="icons-img" />
+                  </div>
+                </div>
+                {/* </Zoom> */}
               </div>
             </div>
             <Scroll offset={10} type="id" element="footer">

@@ -45,18 +45,21 @@ class Header extends Component {
   render() {
     return (
       <section id="header">
-        <video id="myVideo" className="austin-clouds" loop autoPlay muted>
-          <source src={cloudsaustin} type="video/mp4"></source>
-        </video>
+        <Fade delay={500} duration={1000}>
+          <video id="myVideo" className="austin-clouds" loop autoPlay muted>
+            <source src={cloudsaustin} type="video/mp4"></source>
+          </video>
+        </Fade>
         <video className="austin-clouds" id="austin-lake" loop autoPlay muted>
           <source src={austinlake} type="video/mp4"></source>
         </video>
+
         <Waypoint
           onEnter={this.handleWaypointEnter}
           onLeave={this.handleWaypointLeave}
         >
           <header className="major">
-            <Fade left delay={1500}>
+            <Fade left delay={2000}>
               <ul className="icons">
                 {config.socialLinks.map(social => {
                   const { icon, name, url } = social;
@@ -82,7 +85,7 @@ class Header extends Component {
                 })}
               </ul>
             </Fade>
-            <Fade top duration={1500}>
+            <Fade delay={500}>
               <h1>{config.heading}</h1>
               <p>{config.subHeading}</p>
               <section id="section07" className="demo">
